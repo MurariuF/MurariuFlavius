@@ -158,6 +158,53 @@ void LUNGIME(int x, int y)
         }
 
 }
+void marimiARIE()
+{
+    cout<<"Ari(a)"<<endl;
+    cout<<"Acri(ac)"<<endl;
+    cout<<"Centimetri(cm)"<<endl;
+    cout<<"Picioare(ft)"<<endl;
+    cout<<"Hectari(ha)"<<endl;
+    cout<<"Tol(in)"<<endl;
+    cout<<"Kilometri(km)"<<endl;
+    cout<<"Metri(m)"<<endl;
+    cout<<"Milimetri(mm)"<<endl;
+    cout<<"Yarzi(Yd)"<<endl;
+}
+void ARIE(int x, int y)
+{
+    marimiARIE();
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>9) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Ari(a):"<<x<<endl;
+        cout<<"Acri(ac):"<<x/40.4685611<<endl;
+        cout<<"Centimetri(cm):"<<x*1000000<<endl;
+        cout<<"Picioare(ft):"<<x/1076.426264<<endl;
+        cout<<"Hectari(ha):"<<<x/100<endl;
+        cout<<"Tol(in):"<<<x*154990.700557<endl;
+        cout<<"Kilometri(km):"<<x/10000<<endl;
+        cout<<"Metri(m):"<<x*100<<endl;
+        cout<<"Milimetri(mm):"<<x*100000000<<endl;
+        cout<<"Yarzi(Yd):"<<x*119.598939<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Ari(a):"<<x*40.468561<<endl;
+        cout<<"Acri(ac):"<<x<<endl;
+        cout<<"Centimetri(cm):"<<x*40468561.19<<endl;
+        cout<<"Picioare(ft):"<<x*43561.42216<<endl;
+        cout<<"Hectari(ha):"<<<x/2.471053<endl;
+        cout<<"Tol(in):"<<<x*6272250.64941<endl;
+        cout<<"Kilometri(km):"<<x/247.1053999<<endl;
+        cout<<"Metri(m):"<<x/4046.856119<<endl;
+        cout<<"Milimetri(mm):"<<x*4046856119<<endl;
+        cout<<"Yarzi(Yd):"<<x*4839.9969975<<endl;
+    }
+}
 int main()
 {
     int x, y;
