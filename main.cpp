@@ -176,7 +176,7 @@ void ARIE(int x, int y)
     marimiARIE();
     cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
     cin>>y;
-    if(y<0 && y>9) return;
+    if(y<0 && y>10) return;
     citireValoarePentruConvertire(x);
     if(y==1)
     {
@@ -256,6 +256,61 @@ void ARIE(int x, int y)
         cout<<"Metri(m):"<<x/1549.907005<<endl;
         cout<<"Milimetri(mm):"<<x*645.2<<endl;
         cout<<"Yarzi(Yd):"<<x/1295.920359<<endl;
+    }
+    else if(y==7)
+    {
+        cout<<"Ari(a):"<<x*1000<<endl;
+        cout<<"Acri(ac):"<<x/247.1053999<<endl;
+        cout<<"Centimetri(cm):"<<x*10000000000<<endl;
+        cout<<"Picioare(ft):"<<x*10764262.648<<endl;
+        cout<<"Hectari(ha):"<<<x*100<endl;
+        cout<<"Tol(in):"<<<x*1549907005.5796<endl;
+        cout<<"Kilometri(km):"<<x<<endl;
+        cout<<"Metri(m):"<<x*1000000<<endl;
+        cout<<"Milimetri(mm):"<<x*1000000000000<<endl;
+        cout<<"Yarzi(Yd):"<<x*1195989.39404<<endl;
+    }
+    else if(y==8)
+    {
+
+        cout<<"Ari(a):"<<x/100<<endl;
+        cout<<"Acri(ac):"<<x/4046.856119<<endl;
+        cout<<"Centimetri(cm):"<<x*10000<<endl;
+        cout<<"Picioare(ft):"<<x*10.7642626<<endl;
+        cout<<"Hectari(ha):"<<<x/10000<endl;
+        cout<<"Tol(in):"<<<x*1549.907005<endl;
+        cout<<"Kilometri(km):"<<x/1000000<<endl;
+        cout<<"Metri(m):"<<x<<endl;
+        cout<<"Milimetri(mm):"<<x*1000000<<endl;
+        cout<<"Yarzi(Yd):"<<x*1.195989394<<endl;
+
+    }
+    else if(y==9)
+    {
+        cout<<"Ari(a):"<<x<<endl;
+        cout<<"Acri(ac):"<<x*2.471053<<endl;
+        cout<<"Centimetri(cm):"<<x/100.000000000001<<endl;
+        cout<<"Picioare(ft):"<<x/92900.000000074<<endl;
+        cout<<"Hectari(ha):"<<<x<endl;
+        cout<<"Tol(in):"<<<x*645.2<endl;
+        cout<<"Kilometri(km):"<<x<<endl;
+        cout<<"Metri(m):"<<x/1000000<<endl;
+        cout<<"Milimetri(mm):"<<x<<endl;
+        cout<<"Yarzi(Yd):"<<x/836127.816029<<endl;
+    }
+    else if(y==10)
+    {
+        cout<<"Ari(a):"<<x/119.598939<<endl;
+        cout<<"Acri(ac):"<<x/4839.99699<<endl;
+        cout<<"Centimetri(cm):"<<x*8361.27816<<endl;
+        cout<<"Picioare(ft):"<<x*9.0002994<<endl;
+        cout<<"Hectari(ha):"<<<x/11959.89394<endl;
+        cout<<"Tol(in):"<<<x*1295.92035957<endl;
+        cout<<"Kilometri(km):"<<x<<endl;
+        cout<<"Metri(m):"<<x/1.195989<<endl;
+        cout<<"Milimetri(mm):"<<x*836127.816<<endl;
+        cout<<"Yarzi(Yd):"<<x<<endl;
+
     }
 }
 int main()
