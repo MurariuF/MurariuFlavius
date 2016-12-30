@@ -204,6 +204,59 @@ void ARIE(int x, int y)
         cout<<"Milimetri(mm):"<<x*4046856119<<endl;
         cout<<"Yarzi(Yd):"<<x*4839.9969975<<endl;
     }
+    else if(y==3)
+    {
+        cout<<"Ari(a):"<<x/1000000<<endl;
+        cout<<"Acri(ac):"<<x*2.471053<<endl;
+        cout<<"Centimetri(cm):"<<x<<endl;
+        cout<<"Picioare(ft):"<<x/929<<endl;
+        cout<<"Hectari(ha):"<<<x/6.452<endl;
+        cout<<"Tol(in):"<<<x<endl;
+        cout<<"Kilometri(km):"<<x<<endl;
+        cout<<"Metri(m):"<<x/10000<<endl;
+        cout<<"Milimetri(mm):"<<x*100<<endl;
+        cout<<"Yarzi(Yd):"<<x/8361.27816<<endl;
+    }
+    else if(y==4)
+    {
+        cout<<"Ari(a):"<<x/1076.426264<<endl;
+        cout<<"Acri(ac):"<<x/43561.422163<<endl;
+        cout<<"Centimetri(cm):"<<x*928.999999<<endl;
+        cout<<"Picioare(ft):"<<x<<endl;
+        cout<<"Hectari(ha):"<<<x*107642.626481<endl;
+        cout<<"Tol(in):"<<<x*143.9863<endl;
+        cout<<"Kilometri(km):"<<x*9.28999999<<endl;
+        cout<<"Metri(m):"<<x/10.764262<<endl;
+        cout<<"Milimetri(mm):"<<x*92900<<endl;
+        cout<<"Yarzi(Yd):"<<x/9.000299<<endl;
+    }
+    else if(y==5)
+    {
+        cout<<"Ari(a):"<<x*100<<endl;
+        cout<<"Acri(ac):"<<x*2.471053<<endl;
+        cout<<"Centimetri(cm):"<<x*100000000<<endl;
+        cout<<"Picioare(ft):"<<x*107642.62648<<endl;
+        cout<<"Hectari(ha):"<<<x<endl;
+        cout<<"Tol(in):"<<<x*15499070.0557<endl;
+        cout<<"Kilometri(km):"<<x/100<<endl;
+        cout<<"Metri(m):"<<x*10000<<endl;
+        cout<<"Milimetri(mm):"<<x*10000000000<<endl;
+        cout<<"Yarzi(Yd):"<<x*11959.8939404<<endl;
+    }
+    else if(y==6)
+    {
+
+        cout<<"Ari(a):"<<x/154990.7005603<<endl;
+        cout<<"Acri(ac):"<<x*1.594324<<endl;
+        cout<<"Centimetri(cm):"<<x*6.4519999<<endl;
+        cout<<"Picioare(ft):"<<x*143.98636<<endl;
+        cout<<"Hectari(ha):"<<<x<endl;
+        cout<<"Tol(in):"<<<x<endl;
+        cout<<"Kilometri(km):"<<x<<endl;
+        cout<<"Metri(m):"<<x/1549.907005<<endl;
+        cout<<"Milimetri(mm):"<<x*645.2<<endl;
+        cout<<"Yarzi(Yd):"<<x/1295.920359<<endl;
+    }
 }
 int main()
 {
