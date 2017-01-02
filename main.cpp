@@ -313,9 +313,61 @@ void ARIE(int x, int y)
 
     }
 }
+void marimiVOLUM()
+{
+    cout<<"Centilitri(cl)"<<endl;
+    cout<<"Centrimetri(cm)"<<endl;
+    cout<<"Decilitri(dl)"<<endl;
+    cout<<"Decimetri(dm)"<<endl;
+    cout<<"Picioare(ft)"<<endl;
+    cout<<"Galon(gal)"<<endl;
+    cout<<"Tol(in)"<<endl;
+    cout<<"Litri(l)"<<endl;
+    cout<<"Mililitri(ml)"<<endl;
+    cout<<"Metri(m)"<<endl;
+    cout<<"Yarzi(Yd)"<<endl;
+
+}
+void VOLUM(int x, int y)
+{
+    marimiVOLUM()'
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>11) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Centilitri(cl):"<<x<<endl;
+        cout<<"Centrimetri(cm):"<<x*10<<endl;
+        cout<<"Decilitri(dl):"<<x/10<<endl;
+        cout<<"Decimetri(dm):"<<x/100<<endl;
+        cout<<"Picioare(ft):"<<x/2832.000357<<endl;
+        cout<<"Galon(gal):"<<x/454.60124<<endl;
+        cout<<"Tol(in):"<<x/1.63870<<endl;
+        cout<<"Litri(l):"<<x/100<<endl;
+        cout<<"Mililitri(ml):"<<x<<endl;
+        cout<<"Metri(m):"<<x/100000<<endl;
+        cout<<"Yarzi(Yd):"<<x/76456.10654<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Centilitri(cl):"<<x/10<<endl;
+        cout<<"Centrimetri(cm):"<<x<<endl;
+        cout<<"Decilitri(dl):"<<x/100.0001<<endl;
+        cout<<"Decimetri(dm):"<<x/1000<<endl;
+        cout<<"Picioare(ft):"<<x/28320.00357964<<endl;
+        cout<<"Galon(gal):"<<x/4546.0000654624<<endl;
+        cout<<"Tol(in):"<<x/16.3810764<<endl;
+        cout<<"Litri(l):"<<x/1000<<endl;
+        cout<<"Mililitri(ml):"<<x<<endl;
+        cout<<"Metri(m):"<<x/1000000<<endl;
+        cout<<"Yarzi(Yd):"<<x/764561.0654923<<endl;
+    }
+
+}
 int main()
 {
-    int x, y;
+    int x, y, z;
     meniu();
     citireNumarUnitateConvertire(x);
     if(x==1)
