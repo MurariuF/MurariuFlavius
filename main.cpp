@@ -160,16 +160,16 @@ void LUNGIME(int x, int y)
 }
 void marimiARIE()
 {
-    cout<<"Ari(a)"<<endl;
-    cout<<"Acri(ac)"<<endl;
-    cout<<"Centimetri(cm)"<<endl;
-    cout<<"Picioare(ft)"<<endl;
-    cout<<"Hectari(ha)"<<endl;
-    cout<<"Tol(in)"<<endl;
-    cout<<"Kilometri(km)"<<endl;
-    cout<<"Metri(m)"<<endl;
-    cout<<"Milimetri(mm)"<<endl;
-    cout<<"Yarzi(Yd)"<<endl;
+    cout<<"1.Ari(a)"<<endl;
+    cout<<"2.Acri(ac)"<<endl;
+    cout<<"3.Centimetri(cm)"<<endl;
+    cout<<"4.Picioare(ft)"<<endl;
+    cout<<"5.Hectari(ha)"<<endl;
+    cout<<"6.Tol(in)"<<endl;
+    cout<<"7.Kilometri(km)"<<endl;
+    cout<<"8.Metri(m)"<<endl;
+    cout<<"9.Milimetri(mm)"<<endl;
+    cout<<"10.Yarzi(Yd)"<<endl;
 }
 void ARIE(int x, int y)
 {
@@ -315,21 +315,22 @@ void ARIE(int x, int y)
 }
 void marimiVOLUM()
 {
-    cout<<"Centilitri(cl)"<<endl;
-    cout<<"Centrimetri(cm)"<<endl;
-    cout<<"Decilitri(dl)"<<endl;
-    cout<<"Decimetri(dm)"<<endl;
-    cout<<"Picioare(ft)"<<endl;
-    cout<<"Galon(gal)"<<endl;
-    cout<<"Tol(in)"<<endl;
-    cout<<"Litri(l)"<<endl;
-    cout<<"Mililitri(ml)"<<endl;
-    cout<<"Metri(m)"<<endl;
-    cout<<"Yarzi(Yd)"<<endl;
+    cout<<"1.Centilitri(cl)"<<endl;
+    cout<<"2.Centrimetri(cm)"<<endl;
+    cout<<"3.Decilitri(dl)"<<endl;
+    cout<<"4.Decimetri(dm)"<<endl;
+    cout<<"5.Picioare(ft)"<<endl;
+    cout<<"6.Galon(gal)"<<endl;
+    cout<<"7.Tol(in)"<<endl;
+    cout<<"8.Litri(l)"<<endl;
+    cout<<"9.Mililitri(ml)"<<endl;
+    cout<<"10.Metri(m)"<<endl;
+    cout<<"11.Yarzi(Yd)"<<endl;
 
 }
 void VOLUM(int x, int y)
 {
+
     marimiVOLUM()'
     cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
     cin>>y;
@@ -362,6 +363,184 @@ void VOLUM(int x, int y)
         cout<<"Mililitri(ml):"<<x<<endl;
         cout<<"Metri(m):"<<x/1000000<<endl;
         cout<<"Yarzi(Yd):"<<x/764561.0654923<<endl;
+    }
+    else if(y==3)
+    {
+        cout<<"Centilitri(cl):"<<x*10<<endl;
+        cout<<"Centrimetri(cm)":<<x*100<<endl;
+        cout<<"Decilitri(dl):"<<x<<endl;
+        cout<<"Decimetri(dm):"<<x/10<<endl;
+        cout<<"Picioare(ft):"<<x/283.20529<<endl;
+        cout<<"Galon(gal):"<<x/45.460744<<endl;
+        cout<<"Tol(in):"<<x*6.102374<<endl;
+        cout<<"Litri(l):"<<x/10<<endl;
+        cout<<"Mililitri(ml):"<<x*100<<endl;
+        cout<<"Metri(m):"<<x/10000<<endl;
+        cout<<"Yarzi(Yd):"<<x/7645.6106<<endl;
+    }
+    else if(y==4)
+    {
+        cout<<"Centilitri(cl):"<<x*100<<endl;
+        cout<<"Centrimetri(cm)":<<x*1000<<endl;
+        cout<<"Decilitri(dl):"<<x*10<<endl;
+        cout<<"Decimetri(dm):"<<x<<endl;
+        cout<<"Picioare(ft):"<<x/18.688<<endl;
+        cout<<"Galon(gal):"<<x/4.546<<endl;
+        cout<<"Tol(in):"<<x*61.02374<<endl;
+        cout<<"Litri(l):"<<x<<endl;
+        cout<<"Mililitri(ml):"<<x*1000<<endl;
+        cout<<"Metri(m):"<<x/1000<<endl;
+        cout<<"Yarzi(Yd):"<<x/765.1109<<endl;
+    }
+    else if(y==5)
+    {
+        cout<<"Centilitri(cl):"<<x*2832<<endl;
+        cout<<"Centrimetri(cm)":<<x*28320<<endl;
+        cout<<"Decilitri(dl):"<<x*283.2<<endl;
+        cout<<"Decimetri(dm):"<<x*28.32<<endl;
+        cout<<"Picioare(ft):"<<x<<endl;
+        cout<<"Galon(gal):"<<x*6.2296<<endl;
+        cout<<"Tol(in):"<<x*1728.1924<<endl;
+        cout<<"Litri(l):"<<x*28.32<<endl;
+        cout<<"Mililitri(ml):"<<x*28320<<endl;
+        cout<<"Metri(m):"<<x/35.3107<<endl;
+        cout<<"Yarzi(Yd):"<<x/26.99784<<endl;
+    }
+    else if(y==6)
+    {
+        cout<<"Centilitri(cl):"<<x*454.599<<endl;
+        cout<<"Centrimetri(cm)":<<x*4546<<endl;
+        cout<<"Decilitri(dl):"<<x*45.4599<<endl;
+        cout<<"Decimetri(dm):"<<x*4.54599<<endl;
+        cout<<"Picioare(ft):"<<x/6.2305<<endl;
+        cout<<"Galon(gal):"<<x<<endl;
+        cout<<"Tol(in):"<<x*277.4139<<endl;
+        cout<<"Litri(l):"<<x*4.54599<<endl;
+        cout<<"Mililitri(ml):"<<x*4546<<endl;
+        cout<<"Metri(m):"<<x/219.9736<<endl;
+        cout<<"Yarzi(Yd):"<<x/168.2085<<endl;
+    }
+    else if(y==7)
+    {
+        cout<<"Centilitri(cl):"<<x*1.6387<<endl;
+        cout<<"Centrimetri(cm)":<<x*16.387<<endl;
+        cout<<"Decilitri(dl):"<<x/6.105<<endl;
+        cout<<"Decimetri(dm):"<<x/61.05<<endl;
+        cout<<"Picioare(ft):"<<x/1728.3097<<endl;
+        cout<<"Galon(gal):"<<x/277.4694<<endl;
+        cout<<"Tol(in):"<<x<<endl;
+        cout<<"Litri(l):"<<x/61.05<<endl;
+        cout<<"Mililitri(ml):"<<x*16.38<<endl;
+        cout<<"Metri(m):"<<x*61050.06<<endl;
+        cout<<"Yarzi(Yd):"<<x*46663.5557<<endl;
+    }
+    else if(y==8)
+    {
+        cout<<"Centilitri(cl):"<<x*100<<endl;
+        cout<<"Centrimetri(cm)":<<x*1000<<endl;
+        cout<<"Decilitri(dl):"<<x*10<<endl;
+        cout<<"Decimetri(dm):"<<x<<endl;
+        cout<<"Picioare(ft):"<<x/28.3205<<endl;
+        cout<<"Galon(gal):"<<x/4.546<<endl;
+        cout<<"Tol(in):"<<x*61.0237<<endl;
+        cout<<"Litri(l):"<<x<<endl;
+        cout<<"Mililitri(ml):"<<x*1000<<endl;
+        cout<<"Metri(m):"<<x/1000<<endl;
+        cout<<"Yarzi(Yd):"<<x/769.2307<<endl;
+    }
+    else if(y==9)
+    {
+        cout<<"Centilitri(cl):"<<x/10<<endl;
+        cout<<"Centrimetri(cm)":<<x<<endl;
+        cout<<"Decilitri(dl):"<<x/100<<endl;
+        cout<<"Decimetri(dm):"<<x/1000<<endl;
+        cout<<"Picioare(ft):"<<x</2832.0589<endl;
+        cout<<"Galon(gal):"<<x/4547.5216<<endl;
+        cout<<"Tol(in):"<<x/16.3872<<endl;
+        cout<<"Litri(l):"<<x/1000<<endl;
+        cout<<"Mililitri(ml):"<<x<<endl;
+        cout<<"Metri(m):"<<x/1000000<<endl;
+        cout<<"Yarzi(Yd):"<<x/765110.941<<endl;
+    }
+    else if(y==10)
+    {
+        cout<<"Centilitri(cl):"<<x*1000000<<endl;
+        cout<<"Centrimetri(cm)":<<x*1000000<<endl;
+        cout<<"Decilitri(dl):"<<x*10000<<endl;
+        cout<<"Decimetri(dm):"<<x*1000<<endl;
+        cout<<"Picioare(ft):"<<x*25.3107<<endl;
+        cout<<"Galon(gal):"<<x*219.9736<<endl;
+        cout<<"Tol(in):"<<x*61023.744<<endl;
+        cout<<"Litri(l):"<<x*1000<<endl;
+        cout<<"Mililitri(ml):"<<x*1000000<<endl;
+        cout<<"Metri(m):"<<x<<endl;
+        cout<<"Yarzi(Yd):"<<x*1.3079<<endl;
+    }
+    else if(y==11)
+    {
+
+        cout<<"Centilitri(cl):"<<x*76456<<endl;
+        cout<<"Centrimetri(cm)":<<x*764560<<endl;
+        cout<<"Decilitri(dl):"<<x/7645.6<<endl;
+        cout<<"Decimetri(dm):"<<x/764.56<<endl;
+        cout<<"Picioare(ft):"<<x*26.9971<<endl;
+        cout<<"Galon(gal):"<<x*168.183<<endl;
+        cout<<"Tol(in):"<<x*46656.313<<endl;
+        cout<<"Litri(l):"<<x*764.56<<endl;
+        cout<<"Mililitri(ml):"<<x*764560<<endl;
+        cout<<"Metri(m):"<<x/1.30794<<endl;
+        cout<<"Yarzi(Yd):"<<x<<endl;
+    }
+
+}
+void marimiTIMP()
+{
+    cout<<"1.Attosecunda(as)"<<endl;
+    cout<<"2.Centisecunda(cs)"<<endl;
+    cout<<"3.Decisecunda(ds)"<<endl;
+    cout<<"4.Femtosecunda(fs)"<<endl;
+    cout<<"5.Ora(h)"<<endl;
+    cout<<"6.Megaannum(ma)"<<endl;
+    cout<<"7.Minute(min)"<<endl;
+    cout<<"8.Milisecunda(ms)"<<endl;
+    cout<<"9.Nanosecunda(ns)"<<endl;
+    cout<<"10.Picosecunda(ps)"<<endl;
+    cout<<"11.Secunda(s)"<<endl;
+}
+void TIMP(int x, int y)
+{
+    marimiTIMP();
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>11) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Attosecunda(as): "<<x<<endl;
+        cout<<"Centisecunda(cs): "<<x<<endl;
+        cout<<"Decisecunda(ds): "<<x<<endl;
+        cout<<"Femtosecunda(fs): "<<x/1000<<endl;
+        cout<<"Ora(h): "<<x*2.777<<endl;
+        cout<<"Megaannum(ma): "<<x*3.17323<<endl;
+        cout<<"Minute(min): "<<x*1.666<<endl;
+        cout<<"Milisecunda(ms): "<<x<<endl;
+        cout<<"Nanosecunda(ns): "<<x<<endl;
+        cout<<"Picosecunda(ps): "<<x/1000000<<endl;
+        cout<<"Secunda(s): "<<x<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Attosecunda(as): "<<x*10000000000000000<<endl;
+        cout<<"Centisecunda(cs): "<<x<<endl;
+        cout<<"Decisecunda(ds): "<<x/10<<endl;
+        cout<<"Femtosecunda(fs): "<<x*10000000000000<<endl;
+        cout<<"Ora(h): "<<x/360000<<endl;
+        cout<<"Megaannum(ma): "<<x<<endl;
+        cout<<"Minute(min): "<<x/6000<<endl;
+        cout<<"Milisecunda(ms): "<<x*10<<endl;
+        cout<<"Nanosecunda(ns): "<<x*10000000<<endl;
+        cout<<"Picosecunda(ps): "<<x*10000000000<<endl;
+        cout<<"Secunda(s): "<<x/100<<endl;
     }
 
 }
