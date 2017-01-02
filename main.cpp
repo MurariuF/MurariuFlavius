@@ -642,16 +642,30 @@ void TIMP(int x, int y)
     }
     else if(y==10)
     {
-        cout<<"Attosecunda(as): "<<x<<endl;
-        cout<<"Centisecunda(cs): "<<x<<endl;
-        cout<<"Decisecunda(ds): "<<x<<endl;
-        cout<<"Femtosecunda(fs): "<<x<<endl;
-        cout<<"Ora(h): "<<x<<endl;
-        cout<<"Megaannum(ma): "<<x<<endl;
-        cout<<"Minute(min): "<<x<<endl;
-        cout<<"Milisecunda(ms): "<<x<<endl;
-        cout<<"Nanosecunda(ns): "<<x<<endl;
+        cout<<"Attosecunda(as): "<<x*1000000<<endl;
+        cout<<"Centisecunda(cs): "<<x*10<<endl;
+        cout<<"Decisecunda(ds): "<<x*1e-11<<endl;
+        cout<<"Femtosecunda(fs): "<<x*1000<<endl;
+        cout<<"Ora(h): "<<x*2.7777777777777775e-16<<endl;
+        cout<<"Megaannum(ma): "<<x*3.17323314378554e-27<<endl;
+        cout<<"Minute(min): "<<x*1.6666666666666667e-14<<endl;
+        cout<<"Milisecunda(ms): "<<x*1e-9<<endl;
+        cout<<"Nanosecunda(ns): "<<x/1000<<endl;
         cout<<"Picosecunda(ps): "<<x<<endl;
+        cout<<"Secunda(s): "<<x*1e-12<<endl;
+    }
+    else if(y==11)
+    {
+        cout<<"Attosecunda(as): "<<x*999999999999999900<<endl;
+        cout<<"Centisecunda(cs): "<<x*100<<endl;
+        cout<<"Decisecunda(ds): "<<x*10<<endl;
+        cout<<"Femtosecunda(fs): "<<x*1000000000000000<<endl;
+        cout<<"Ora(h): "<<x3600<<endl;
+        cout<<"Megaannum(ma): "<<x*3.1732331437855403e-15<<endl;
+        cout<<"Minute(min): "<<x/60<<endl;
+        cout<<"Milisecunda(ms): "<<x*1000<<endl;
+        cout<<"Nanosecunda(ns): "<<x*1000000000<<endl;
+        cout<<"Picosecunda(ps): "<<x*1000000000000<<endl;
         cout<<"Secunda(s): "<<x<<endl;
     }
 
