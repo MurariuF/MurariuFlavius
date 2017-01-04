@@ -668,7 +668,47 @@ void TIMP(int x, int y)
         cout<<"Picosecunda(ps): "<<x*1000000000000<<endl;
         cout<<"Secunda(s): "<<x<<endl;
     }
+}
+void marimiVITEZA()
+{
+    cout<<"1.Centimetri(cm)"<<endl;
+    cout<<"2.Picioare pe ora(fph)"<<endl;
+    cout<<"3.Picioare pe secunda(fps)"<<endl;
+    cout<<"4.Ora(h)"<<endl;
+    cout<<"5.Tol(in)"<<endl;
+    cout<<"6.Tol pe secunda(ips)"<<endl;
+    cout<<"7.Metri(m)"<<endl;
+    cout<<"8.Minute(min)"<<endl;
+    cout<<"9.Mile pe ora(mph)"<<endl;
+    cout<<"10.Metri pe secunda(mps)"<<endl;
+    cout<<"11.Mila(mi)"<<endl;
+    cout<<"12.Mila marina(nmi)"<<endl;
+    cout<<"13.Secunda(s)"<<endl;
+    cout<<"14.Yarzi(Yd)"<<endl;
 
+}
+void VITEZA(int x, int y)
+{
+    void marimiVITEZA();
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>14) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Centimetri(cm): "<<x<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*1.968496580722123<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/1828.7996<<endl;
+        cout<<"Tol pe secunda(ips): "<<x<<endl;
+        cout<<"Metri pe ora(m/h): "<<x/1.6666<<endl;
+        cout<<"Metri pe minut(m/min): "<<x/99.9999<<endl;
+        cout<<"Mile pe ora(mph): "<<x/2682.2394<<endl;
+        cout<<"Metri pe secunda(mps): "<<x<<endl;
+        cout<<"Mila(mi): "<<x<<endl;
+        cout<<"Mila marina(nmi): "<<x<<endl;
+        cout<<"Secunda(s): "<<x<<endl;
+        cout<<"Yarzi(Yd): "<<x<<endl;
+    }
 }
 int main()
 {
