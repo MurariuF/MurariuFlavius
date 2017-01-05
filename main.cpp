@@ -671,20 +671,21 @@ void TIMP(int x, int y)
 }
 void marimiVITEZA()
 {
-    cout<<"1.Centimetri(cm)"<<endl;
-    cout<<"2.Picioare pe ora(fph)"<<endl;
-    cout<<"3.Picioare pe secunda(fps)"<<endl;
-    cout<<"4.Ora(h)"<<endl;
-    cout<<"5.Tol(in)"<<endl;
-    cout<<"6.Tol pe secunda(ips)"<<endl;
-    cout<<"7.Metri(m)"<<endl;
-    cout<<"8.Minute(min)"<<endl;
-    cout<<"9.Mile pe ora(mph)"<<endl;
-    cout<<"10.Metri pe secunda(mps)"<<endl;
-    cout<<"11.Mila(mi)"<<endl;
-    cout<<"12.Mila marina(nmi)"<<endl;
-    cout<<"13.Secunda(s)"<<endl;
-    cout<<"14.Yarzi(Yd)"<<endl;
+    cout<<"1.Centimetri pe minut(cm/min)"<<endl;
+    cout<<"2.Centimetri pe secunda(cm/s)"<<endl;
+    cout<<"3.Picioare pe ora(fph)"<<endl;
+    cout<<"4.Picioare pe secunda(fps)"<<endl;
+    cout<<"5.Picioare pe minut(ft/min)"<<endl;
+    cout<<"6.Metri pe ora(m/h)"<<endl;
+    cout<<"7.Metri pe minut(m/min)"<<endl;
+    cout<<"8.Metri pe secunda(mps)"<<endl;
+    cout<<"9.Tol pe secunda(ips)"<<endl;
+    cout<<"10.Mile pe ora(mph)"<<endl;
+    cout<<"11.Mile pe secunda(mps)"<<endl;
+    cout<<"12.Mila marina pe ora(nmi/h)"<<endl;
+    cout<<"13.Yarzi pe ora(Yd/h)"<<endl;
+    cout<<"14.Yarzi pe min(Yd/min)"<<endl;
+    cout<<"15.Yarzi pe secunda(Yd/s)"<<endl;
 
 }
 void VITEZA(int x, int y)
@@ -692,22 +693,277 @@ void VITEZA(int x, int y)
     void marimiVITEZA();
     cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
     cin>>y;
-    if(y<0 && y>14) return;
+    if(y<0 && y>15) return;
     citireValoarePentruConvertire(x);
     if(y==1)
     {
-        cout<<"Centimetri(cm): "<<x<<endl;
+        cout<<"Centimetri pe minut(cm/min): "<<x<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x/59.999<<endl;
         cout<<"Picioare pe ora(fph): "<<x*1.968496580722123<<endl;
         cout<<"Picioare pe secunda(fps): "<<x/1828.7996<<endl;
-        cout<<"Tol pe secunda(ips): "<<x<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x/30.4799<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/152.3999<<endl;
         cout<<"Metri pe ora(m/h): "<<x/1.6666<<endl;
         cout<<"Metri pe minut(m/min): "<<x/99.9999<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/5999.9988<<endl;
         cout<<"Mile pe ora(mph): "<<x/2682.2394<<endl;
-        cout<<"Metri pe secunda(mps): "<<x<<endl;
-        cout<<"Mila(mi): "<<x<<endl;
-        cout<<"Mila marina(nmi): "<<x<<endl;
-        cout<<"Secunda(s): "<<x<<endl;
-        cout<<"Yarzi(Yd): "<<x<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/5999.9988<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/3086.3993<<endl;;
+        cout<<"Yarzi pe ora(Yd/h): "<<x/1.52399<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x/91.44<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/5486.4003<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x/59.9999<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*118.10977122137315<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/30.48<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*1.9685039370078738<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*35.99997120002304<<endl;
+        cout<<"Metri pe minut(m/min): "<<x/1.6<<endl;
+        cout<<"Metri pe secunda(mps): "<<x/100<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/2.54<<endl;
+        cout<<"Mile pe ora(mph): "<<x/44.704<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/100<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/51.44<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x/39.37007874015748<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x/1.524<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/91.44<<endl;
+    }
+    else if(y==3)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x/1.968<<endl;
+        cout<<"Centimetri pe minut(cm/s): "<<x/118.1097<<endl;
+        cout<<"Picioare pe ora(fph): "<<x<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/3599.9858<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x/59.9997<<endl;
+        cout<<"Metri pe ora(m/h): "<<x/3.2808<<endl;
+        cout<<"Metri pe minut(m/min): "<<x/196.8496<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/11810.9771<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/299.9988<<endl;
+        cout<<"Mile pe ora(mph): "<<x/5279.9792<<endl;
+        cout<<"Mile pe secunda(mps): "<<x11810.977<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/6075.5666<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x/2.999<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x/179.9993<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/10799.9604<<endl;
+    }
+    else if(y==5)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*30.479993904001223<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x/1.9685<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*59.99976378045756<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/60<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*18.287985369611704<<endl;
+        cout<<"Metri pe minut(m/min): "<<x/3.2808<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/196.8503<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/5<<endl;
+        cout<<"Mile pe ora(mph): "<<x/88<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/196.8503<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/101.2598<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*20<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x/3.000000787<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/180.00004<<endl;
+    }
+    else if(y==4)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*1828.7996342400734<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*30.48<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*3599.985826827454<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*60<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*1097.2791221767022<<endl;
+        cout<<"Metri pe minut(m/min): "<<x*18.28799963424001<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/3.2808<<endl;
+        cout<<"Tol pe secunda(ips): "<<x*12<<endl;
+        cout<<"Mile pe ora(mph): "<<x/1.4666<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/3.2808<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/1.68766<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*1200<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*19.999994750657546<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/3<<endl;
+    }
+    else if(y==6)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*1.6666676666664668<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x/35.999<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*3.2808296030330593<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/1097.2791<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x/18.287<<endl;
+        cout<<"Metri pe ora(m/h): "<<x<<endl;
+        cout<<"Metri pe minut(m/min): "<<x/59.999953<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/3599.9971<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/91.4399<<endl;
+        cout<<"Mile pe ora(mph): "<<x/1609.3427<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/3599.9971<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/1851.8385<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*1.0936141732283464<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x/54.8639<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/3291.8382<<endl;
+    }
+    else if(y==7)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*99.9999820000036<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*1.6666667<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*196.84962263928097<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/18.28799<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*3.280839960629921<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*59.99995320003744<<endl;
+        cout<<"Metri pe minut(m/min): "<<x<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/60<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/1052399<<endl;
+        cout<<"Mile pe ora(mph): "<<x/26.8223<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/60<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/30.8639<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*65.61679921259842<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*1.0936130331724323<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/54.864<<endl;
+    }
+    else if(y==8)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*5999.99880000024<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*100<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*11810.977122137316<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x*3.280839895013123<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*196.85039370078738<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*3599.9971200023037<<endl;
+        cout<<"Metri pe minut(m/min): "<<x*59.99999880000003<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x<<endl;
+        cout<<"Tol pe secunda(ips): "<<x*39.37007874015748<<endl;
+        cout<<"Mile pe ora(mph): "<<x*2.2369362920544025<<endl;
+        cout<<"Mile pe secunda(mps): "<<x<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x*1.944012441679627*<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*3937.0078740157483<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*65.61678067801033<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x*1.0936130000578717<<endl;
+    }
+    else if(y==9)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*152.3999695200061<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*2.54<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*299.9988189022878<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/12<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*4.999999999999999<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*91.43992684805852<<endl;
+        cout<<"Metri pe minut(m/min): "<<x*1.5239999695200006<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/39.37<<endl;
+        cout<<"Tol pe secunda(ips): "<<x<<endl;
+        cout<<"Mile pe ora(mph): "<<x/17.6<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/39.37<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/20.25<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*100<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*1.666666229221462<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/36<<endl;
+    }
+    else if(y==10)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*2682.2394635521073<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*44.704<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*5279.979212680265<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x*1.4666666666666666<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*88<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*1609.34271252583<<endl;
+        cout<<"Metri pe minut(m/min): "<<x*26.82239946355201<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/2.2369<<endl;
+        cout<<"Tol pe secunda(ips): "<<x*17.6<<endl;
+        cout<<"Mile pe ora(mph): "<<x<<endl;
+        cout<<"Meter per second(mps): "<<x/2.2369<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/1.15068<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*1760<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*29.333325634297733<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/2.045455<<endl;
+    }
+    else if(y==11)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*5999.99880000024<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*100<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*11810.977122137316<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x*3.280839895013123<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*196.85039370078738<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*3599.9971200023037<<endl;
+        cout<<"Metri pe minut(m/min): "<<x*59.99999880000003<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x<<endl;
+        cout<<"Tol pe secunda(ips): "<<x*39.37007874015748<<endl;
+        cout<<"Mile pe ora(mph): "<<x*2.2369362920544025<<endl;
+        cout<<"Mile pe secunda(mps): "<<x<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x*1.944012441679627<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*3937.0078740157483<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*65.61678067801033<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x*1.0936130000578717<<endl;
+    }
+    else if(y==12)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*3086.3993827201234<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*51.44<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*6075.566631627435<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x*1.6876640419947504<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*101.25984251968502<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*1851.838518529185<<endl;
+        cout<<"Metri pe minut(m/min): "<<x*30.86399938272001<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/1.944012<<endl;
+        cout<<"Tol pe secunda(ips): "<<x*20.251968503937007<<endl;
+        cout<<"Mile pe ora(mph): "<<x*1.1506800286327845<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/1.944012<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*2025.1968503937007<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*33.75327198076851<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/17776<<endl;
+    }
+    else if(y==13)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*1.523999695200061<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x/39.37<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*2.999988189022878<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/1200<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x/20<<endl;
+        cout<<"Metri pe ora(m/h): "<<x/1.0936<<endl;
+        cout<<"Metri pe minut(m/min): "<<x/65.6167<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/3937.0078<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/100<<endl;
+        cout<<"Mile pe ora(mph): "<<x/1760<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/3937.0078<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x*2025.1968<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x/60<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/3600.00098<<endl;
+    }
+    else if(y==14)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*91.44000571199886<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*1.5240004<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*179.99933858528118<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x/19.9999<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*3.0000007874015746<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*54.86397050882359<<endl;
+        cout<<"Metri pe minut(m/min): "<<x/1.0936<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/65.6167<<endl;
+        cout<<"Tol pe secunda(ips): "<<x/1.6666<<endl;
+        cout<<"Mile pe ora(mph): "<<x/29.3333<<endl;
+        cout<<"Mile pe secunda(mps): "<<x/65.6167<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x/33.7532<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*60.000015748031494<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x/60<<endl;
+    }
+    else if(y==15)
+    {
+        cout<<"Centimetri pe minut(cm/min): "<<x*5486.400399119921<<endl;
+        cout<<"Centimetri pe secunda(cm/s): "<<x*91.44002494<<endl;
+        cout<<"Picioare pe ora(fph): "<<x*10799.960426140055<<endl;
+        cout<<"Picioare pe secunda(fps): "<<x*3.0000008182414697<<endl;
+        cout<<"Picioare pe minut(ft/min): "<<x*180.00004909448816<<endl;
+        cout<<"Metri pe ora(m/h): "<<x*3291.8382643693885<<endl;
+        cout<<"Metri pe minut(m/min): "<<x*54.86401386671972<<endl;
+        cout<<"Metri pe secunda(m/s): "<<x/1.03936<<endl;
+        cout<<"Tol pe secunda(ips): "<<x*36.00000981889764<<endl;
+        cout<<"Mile pe ora(mph): "<<x*2.0454551033464567<<endl;
+        cout<<"Mile pe secunda(mps): "<<x*0.9144002494<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x*1.7776054615085537<<endl;
+        cout<<"Yarzi pe ora(Yd/h): "<<x*3600.000981889764<<endl;
+        cout<<"Yarzi pe min(Yd/min): "<<x*60.000000616797735<<endl;
+        cout<<"Yarzi pe secunda(Yd/s): "<<x<<endl;
     }
 }
 int main()
