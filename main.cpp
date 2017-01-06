@@ -966,6 +966,49 @@ void VITEZA(int x, int y)
         cout<<"Yarzi pe secunda(Yd/s): "<<x<<endl;
     }
 }
+void marimiTEMPERATURA()
+{
+    cout<<"1.Grade Celsius(C°)"<<endl;
+    cout<<"2.Grade Fahrenheit(F°)"<<endl;
+    cout<<"3.Grade Kelvin(K°)"<<endl;
+    cout<<"4.Grade Rankie(R°)"<<endl;
+}
+void TEMPERATURA(int x, int y)
+{
+    void marimiTEMPERATURA();
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>4) return;
+    citireValoarePentruConvertire(x)'
+    if(y==1)
+    {
+        cout<<"Grade Celsius(C°): "<<x<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<(x*9)/5+32<<endl;
+        cout<<"Grade Kelvin(K°): "<<x+273.15<<endl;
+        cout<<"Grade Rankie(R°): "<<(x+273.15)*9/5<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Grade Celsius(C°): "<<(x-32)*5/9<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<x<<endl;
+        cout<<"Grade Kelvin(K°): "<<(x+459.67)*5/9<<endl;
+        cout<<"Grade Rankie(R°): "<<(x-32)+491.67<<endl;
+    }
+    else if(y==3)
+    {
+        cout<<"Grade Celsius(C°): "<<x-273.15<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<x*9/5-459.67<<endl;
+        cout<<"Grade Kelvin(K°): "<<x<<endl;
+        cout<<"Grade Rankie(R°): "<<x*9/5<<endl;
+    }
+    else if(y==4)
+    {
+        cout<<"Grade Celsius(C°): "<<(x-491.67)*5/9<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<x-459.67<<endl;
+        cout<<"Grade Kelvin(K°): "<<x*5/9<<endl;
+        cout<<"Grade Rankie(R°): "<<x<<endl;
+    }
+}
 int main()
 {
     int x, y, z;
