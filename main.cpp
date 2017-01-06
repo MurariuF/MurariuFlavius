@@ -979,7 +979,7 @@ void TEMPERATURA(int x, int y)
     cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
     cin>>y;
     if(y<0 && y>4) return;
-    citireValoarePentruConvertire(x)'
+    citireValoarePentruConvertire(x);
     if(y==1)
     {
         cout<<"Grade Celsius(C°): "<<x<<endl;
@@ -1007,6 +1007,119 @@ void TEMPERATURA(int x, int y)
         cout<<"Grade Fahrenheit(F°): "<<x-459.67<<endl;
         cout<<"Grade Kelvin(K°): "<<x*5/9<<endl;
         cout<<"Grade Rankie(R°): "<<x<<endl;
+    }
+}
+void marimiMASA()
+{
+        cout<<"1.Grame(g)"<<endl;
+        cout<<"2.Kilograme(kg)"<<endl;
+        cout<<"3.Funte(pound)"<<endl;
+        cout<<"4.Miligrame(mg)"<<endl;
+        cout<<"5.Unici(oz(AV))"<<endl;
+        cout<<"6.Unici(oz(Troy)"<<endl;
+        cout<<"7.Slug(slug)"<<endl;
+        cout<<"8.Tone(t)"<<endl;
+}
+void MASA(int x, int y)
+{
+    marimiMASA();
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>8) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Grame(g): "<<x<<endl;
+        cout<<"Kilograme(kg): "<<x/1000<<endl;
+        cout<<"Funte(pound): "<<x*0.0022046244201837776<<endl;
+        cout<<"Miligrame(mg): "<<x*1000<<endl;
+        cout<<"Unici(oz(AV)): "<<x*0.03527399072294044<<endl;
+        cout<<"Unici(oz(Troy): "<<x*0.0643014451749803<<endl;
+        cout<<"Slug(slug): "<<x*0.00006852176556196105<<endl;
+        cout<<"Tone(t): "<<x*0.000001<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Grame(g): "<<x*1000<<endl;
+        cout<<"Kilograme(kg): "<<x<<endl;
+        cout<<"Funte(pound): "<<x*2.2046244201837775<<endl;
+        cout<<"Miligrame(mg): "<<x*1000000<<endl;
+        cout<<"Unici(oz(AV)): "<<x*35.27399072294044<<endl;
+        cout<<"Unici(oz(Troy): "<<x*32.15072258749016<<endl;
+        cout<<"Slug(slug): "<<x*0.06852176556196105<<endl;
+        cout<<"Tone(t): "<<x/1000<<endl;
+
+    }
+    else if(y==3)
+    {
+        cout<<"Grame(g): "<<x*453.592<<endl;
+        cout<<"Kilograme(kg): "<<x*0.453592<<endl;
+        cout<<"Funte(pound): "<<x<<endl;
+        cout<<"Miligrame(mg): "<<x*453592<<endl;
+        cout<<"Unici(oz(AV)): "<<x*16<<endl;
+        cout<<"Unici(oz(Troy): "<<x*14.583310559904834<<endl;
+        cout<<"Slug(slug): "<<x*0.031080924684781037<<endl;
+        cout<<"Tone(t): "<<x*0.000453592<<endl;
+
+    }
+    else if(y==4)
+    {
+        cout<<"Grame(g): "<<x/1000<<endl;
+        cout<<"Kilograme(kg): "<<x/1000000<<endl;
+        cout<<"Funte(pound): "<<x*0.0000022046244201837775<<endl;
+        cout<<"Miligrame(mg): "<<x<<endl;
+        cout<<"Unici(oz(AV)): "<<x*0.00003527399072294044<<endl;
+        cout<<"Unici(oz(Troy): "<<x*0.00003215072258749015<<endl;
+        cout<<"Slug(slug): "<<x*6.852176556196105e-8<<endl;
+        cout<<"Tone(t): "<<x*9.999999999999999e-10<<endl;
+    }
+    else if(y==5)
+    {
+        cout<<"Grame(g): "<<x*28.3495<<endl;
+        cout<<"Kilograme(kg): "<<x*0.0283495<<endl;
+        cout<<"Funte(pound): "<<x*0.0625<<endl;
+        cout<<"Miligrame(mg): "<<x*28349.5<<endl;
+        cout<<"Unici(oz(AV)): "<<x<<endl;
+        cout<<"Unici(oz(Troy): "<<x*0.9114569099940522<<endl;
+        cout<<"Slug(slug): "<<x*0.0019425577927988148<<endl;
+        cout<<"Tone(t): "<<x*0.0000283495<<endl;
+
+    }
+    else if(y==6)
+    {
+        cout<<"Grame(g): "<<x*31.103499999999997<<endl;
+        cout<<"Kilograme(kg): "<<x*0.0311035<<endl;
+        cout<<"Funte(pound): "<<x*0.06857153565318612<<endl;
+        cout<<"Miligrame(mg): "<<x*31103.5<<endl;
+        cout<<"Unici(oz(AV)): "<<x*1.097144570450978<<endl;
+        cout<<"Unici(oz(Troy): "<<x<<endl;
+        cout<<"Slug(slug): "<<x*0.0021312667351564554<<endl;
+        cout<<"Tone(t): "<<x*0.0000311035<<endl;
+
+    }
+    else if(y==7)
+    {
+        cout<<"Grame(g): "<<x*14593.902999999998<<endl;
+        cout<<"Kilograme(kg): "<<x*14.593903<<endl;
+        cout<<"Funte(pound): "<<x*32.17407493959329<<endl;
+        cout<<"Miligrame(mg): "<<x*14593903<<endl;
+        cout<<"Unici(oz(AV)): "<<x*514.7851990334926<<endl;
+        cout<<"Unici(oz(Troy): "<<x*469.20452682174033<<endl;
+        cout<<"Slug(slug): "<<x<<endl;
+        cout<<"Tone(t): "<<x*0.014593902999999998<<endl;
+
+    }
+    else if(y==8)
+    {
+        cout<<"Grame(g): "<<x*1000000<<endl;
+        cout<<"Kilograme(kg): "<<x*1000<<endl;
+        cout<<"Funte(pound): "<<x*2204.6244201837776<<endl;
+        cout<<"Miligrame(mg): "<<x<*1000000000<endl;
+        cout<<"Unici(oz(AV)): "<<x*35273.99072294044<<endl;
+        cout<<"Unici(oz(Troy): "<<x<32150.722587490156<endl;
+        cout<<"Slug(slug): "<<x*68.52176556196105<<endl;
+        cout<<"Tone(t): "<<x<<endl;
+
     }
 }
 int main()
