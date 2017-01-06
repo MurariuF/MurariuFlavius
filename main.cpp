@@ -1122,6 +1122,302 @@ void MASA(int x, int y)
 
     }
 }
+void marimiENERGIE()
+{
+    cout<<"1.British Thermal Unit(Btu)"<<endl;
+    cout<<"2.Calorie(cal)"<<endl;
+    cout<<"3.Erg(erg)"<<endl;
+    cout<<"4.Picioare pe Livre-forta(ft-lbf)"<<endl;
+    cout<<"5.Toli pe Livre-forta(in-lbf)"<<endl;
+    cout<<"6.Jouli(J)"<<endl;
+    cout<<"7.Kilocalorie(kcal)"<<endl;
+    cout<<"8.Kilojouli(kJ)"<<endl;
+    cout<<"9.Kilowatt pe ora(kW-h)"<<endl;
+    cout<<"10.Quad BTU(quad BTU)"<<endl;
+    cout<<"11.Tona de combustibil conventional(tcc)"<<endl;
+    cout<<"12.Tona Echivalent Petrol(tep)"<<endl;
+    cout<<"13.Thermie(th)"<<endl;
+    cout<<"14.Watt pe ora(W-h)"<<endl;
+    cout<<"15.Watt pe secunda(W-s)"<<endl;
+}
+void ENERGIE(int x, int y)
+{
+    marimiENERGIE();
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>15) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x<<endl;
+        cout<<"Calorie(cal): "<<x*251.99675169580587<<endl;
+        cout<<"Erg(erg): "<<x*10550600000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*778.1723212164718<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*9338.067855227171<<endl;
+        cout<<"Jouli(J): "<<x*1055.06<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*0.2519967516958058<<endl;
+        cout<<"Kilojouli(kJ): "<<x*1.0550599999999999<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*0.0002930722222222222<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*9.999999999999999e-16<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*3.599953595654369e-8<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*2.5199675169580585e-8<<endl;
+        cout<<"Thermie(th): "<<x*0.00025199675169580585<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*0.29307222222222223<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*1055.06<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*0.003968305120087957<<endl;
+        cout<<"Calorie(cal): "<<x<<endl;
+        cout<<"Erg(erg): "<<x*41868000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*3.0880252065940557<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*37.05630248162675<<endl;
+        cout<<"Jouli(J): "<<x*4.1868<<endl;
+        cout<<"Kilocalorie(kcal): "<<x/1000<<endl;
+        cout<<"Kilojouli(kJ): "<<x*0.0041868<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*0.000001163<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*3.968305120087957e-18<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*1.4285714285714285e-10<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*9.999999999999999e-11<<endl;
+        cout<<"Thermie(th): "<<x/1000000<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*0.001163<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*4.1868<<endl;
+    }
+    else if(y==3)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*9.478133944988911e-11<<endl;
+        cout<<"Calorie(cal): "<<x*2.3884589662749594e-8<<endl;
+        cout<<"Erg(erg): "<<x<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*7.375621492772656e-8<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*8.85074<<endl;
+        cout<<"Jouli(J): "<<x*1e-7<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*2.388458966274959e-11<<endl;
+        cout<<"Kilojouli(kJ): "<<x*9.999999999999999e-11<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*2.7777777777777778e-14<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*9.47813394498891e-26<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*3.412084237535656e-18<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*2.388458966274959e-18<<endl;
+        cout<<"Thermie(th): "<<x*2.3884589662749592e-14<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*2.7777777777777777e-11<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*1e-7<<endl;
+    }
+    else if(y==4)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*0.0012850624119305062<<endl;
+        cout<<"Calorie(cal): "<<x*0.3238315535328652<<endl;
+        cout<<"Erg(erg): "<<x*13558179.483314<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*12.000000000808958<<endl;
+        cout<<"Jouli(J): "<<x*1.3558179483314<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*0.00032383155353286517<<endl;
+        cout<<"Kilojouli(kJ): "<<x*0.0013558179483314<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*3.766160967587222e-7<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*1.2850624119305062e-18<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*4.626165050469502e-11<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*3.2383155353286514e-11<<endl;
+        cout<<"Thermie(th): "<<x*3.238315535328652e-7<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*0.0003766160967587222<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*1.3558179483314<<endl;
+    }
+    else if(y==5)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*0.00010708853432032301<<endl;
+        cout<<"Calorie(cal): "<<x*0.026985962792586225<<endl;
+        cout<<"Erg(erg): "<<x*1129848.2902<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*0.08333333332771557<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x<<endl;
+        cout<<"Jouli(J): "<<x*0.11298482902<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*0.00002698596279258622<<endl;
+        cout<<"Kilojouli(kJ): "<<x*0.00011298482902<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*3.138467472777778e-8<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*1.0708853432032301e-19<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*3.855137541798032e-12<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*2.6985962792586224e-12<<endl;
+        cout<<"Thermie(th): "<<x*2.6985962792586224e-8<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*0.000031384674727777776<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*0.11298482902<<endl;
+    }
+    else if(y==6)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*0.0009478133944988911<<endl;
+        cout<<"Calorie(cal): "<<x*0.23884589662749595<<endl;
+        cout<<"Erg(erg): "<<x*10000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*0.7375621492772656<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*8.850745791923844<<endl;
+        cout<<"Jouli(J): "<<x<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*0.00023884589662749592<<endl;
+        cout<<"Kilojouli(kJ): "<<x/1000<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*2.7777777777777776e-7<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*9.47813394498891e-19<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*3.412084237535656e-11<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*2.3884589662749594e-11<<endl;
+        cout<<"Thermie(th): "<<x*2.388458966274959e-7<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*0.0002777777777777778<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x<<endl;
+    }
+    else if(y==7)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*3.9683051200879573<<endl;
+        cout<<"Calorie(cal): "<<x*1000.0000000000001<<endl;
+        cout<<"Erg(erg): "<<x*41868000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*3088.025206594056<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*37056.30248162675<<endl;
+        cout<<"Jouli(J): "<<x*4186.8<<endl;
+        cout<<"Kilocalorie(kcal): "<<x<<endl;
+        cout<<"Kilojouli(kJ): "<<x<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x<<endl;
+        cout<<"Thermie(th): "<<x<<endl;
+        cout<<"Watt pe ora(W-h): "<<x<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x<<endl;
+    }
+    else if(y==8)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*0.9478133944988911<<endl;
+        cout<<"Calorie(cal): "<<x*238.84589662749596<<endl;
+        cout<<"Erg(erg): "<<x*10000000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*737.5621492772657<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*8850.745791923844<<endl;
+        cout<<"Jouli(J): "<<x*1000<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*0.23884589662749592<<endl;
+        cout<<"Kilojouli(kJ): "<<x<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*0.0002777777777777778<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*9.47813394498891e-16<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*3.4120842375356563e-8<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*2.3884589662749594e-8<<endl;
+        cout<<"Thermie(th): "<<x*0.00023884589662749594<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*0.2777777777777778<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*1000<<endl;
+    }
+    else if(y==9)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*3412.128220196008<<endl;
+        cout<<"Calorie(cal): "<<x*859845.2278589854<<endl;
+        cout<<"Erg(erg): "<<x*36000000000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*2655223.7373981564<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*31862684.85092584<<endl;
+        cout<<"Jouli(J): "<<x*3600000<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*859.8452278589854<<endl;
+        cout<<"Kilojouli(kJ): "<<x*3600<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*3.4121282201960077e-12<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*0.00012283503255128362<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*0.00008598452278589854<<endl;
+        cout<<"Thermie(th): "<<x*0.8598452278589854<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*1000<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*3600000<<endl;
+    }
+    else if(y==10)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*1000000000000000<<endl;
+        cout<<"Calorie(cal): "<<x*251996751695805900<<endl;
+        cout<<"Erg(erg): "<<x*1.05506e+25<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*778172321216471900<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*9338067855227170000<<endl;
+        cout<<"Jouli(J): "<<x*1055060000000000000<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*251996751695805.84<<endl;
+        cout<<"Kilojouli(kJ): "<<x*1055060000000000<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*293072222222.2222<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*35999535.95654369<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*25199675.169580586<<endl;
+        cout<<"Thermie(th): "<<x*251996751695.80588<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*293072222222222.25<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*1055060000000000000<<endl;
+    }
+    else if(y==11)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*27778135.8406157<<endl;
+        cout<<"Calorie(cal): "<<x*7000000000<<endl;
+        cout<<"Erg(erg): "<<x*293076000000000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*21616176446.15839<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*259394117371.38727<<endl;
+        cout<<"Jouli(J): "<<x*29307600000<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*7000000<<endl;
+        cout<<"Kilojouli(kJ): "<<x*29307600<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*8141<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*2.77781358406157e-8<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*0.7<<endl;
+        cout<<"Thermie(th): "<<x*7000<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*8141000<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*29307600000<<endl;
+    }
+    else if(y==12)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*39683051.200879574<<endl;
+        cout<<"Calorie(cal): "<<x*10000000000<<endl;
+        cout<<"Erg(erg): "<<x*418680000000000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*30880252065.94056<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*370563024816.2675<<endl;
+        cout<<"Jouli(J): "<<x*41868000000<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*10000000<<endl;
+        cout<<"Kilojouli(kJ): "<<x*41868000<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*11630<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*3.968305120087957e-8<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*1.4285714285714286<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x<<endl;
+        cout<<"Thermie(th): "<<x*10000<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*11630000<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*41868000000<<endl;
+    }
+    else if(y==13)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*3968.305120087957<<endl;
+        cout<<"Calorie(cal): "<<x*1000000<<endl;
+        cout<<"Erg(erg): "<<x*41868000000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*3088025.206594056<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*37056302.48162675<<endl;
+        cout<<"Jouli(J): "<<x*4186800<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*1000<<endl;
+        cout<<"Kilojouli(kJ): "<<x*4186.8<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*1.163<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*3.968305120087957e-12<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*0.00014285714285714287<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x/10000<<endl;
+        cout<<"Thermie(th): "<<x<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*1163<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*4186800<<endl;
+    }
+    else if(y==14)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*3.412128220196008<<endl;
+        cout<<"Calorie(cal): "<<x*859.8452278589854<<endl;
+        cout<<"Erg(erg): "<<x*36000000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*2655.223737398156<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*31862.684850925838<<endl;
+        cout<<"Jouli(J): "<<x*3600<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*0.8598452278589853<<endl;
+        cout<<"Kilojouli(kJ): "<<x*3.6<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x/1000<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*3.412128220196008e-15<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*1.2283503255128362e-7<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*8.598452278589854e-8<<endl;
+        cout<<"Thermie(th): "<<x*0.0008598452278589854<<endl;
+        cout<<"Watt pe ora(W-h): "<<x<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*3600<<endl;
+    }
+    else if(y==15)
+    {
+        cout<<"British Thermal Unit(Btu): "<<x*0.0009478133944988911<<endl;
+        cout<<"Calorie(cal): "<<x*0.23884589662749595<<endl;
+        cout<<"Erg(erg): "<<x*10000000<<endl;
+        cout<<"Picioare pe Livre-forta(ft-lbf): "<<x*0.7375621492772656<<endl;
+        cout<<"Toli pe Livre-forta(in-lbf): "<<x*8.850745791923844<<endl;
+        cout<<"Jouli(J): "<<x<<endl;
+        cout<<"Kilocalorie(kcal): "<<x*0.00023884589662749592<<endl;
+        cout<<"Kilojouli(kJ): "<<x/1000<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*2.7777777777777776e-7<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*9.47813394498891e-19<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*3.412084237535656e-11<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*2.3884589662749594e-11<<endl;
+        cout<<"Thermie(th): "<<x*2.388458966274959e-7<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*0.0002777777777777778<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x<<endl;
+    }
+}
 int main()
 {
     int x, y, z;
