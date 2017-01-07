@@ -660,7 +660,7 @@ void TIMP(int x, int y)
         cout<<"Centisecunda(cs): "<<x*100<<endl;
         cout<<"Decisecunda(ds): "<<x*10<<endl;
         cout<<"Femtosecunda(fs): "<<x*1000000000000000<<endl;
-        cout<<"Ora(h): "<<x3600<<endl;
+        cout<<"Ora(h): "<<x*3600<<endl;
         cout<<"Megaannum(ma): "<<x*3.1732331437855403e-15<<endl;
         cout<<"Minute(min): "<<x/60<<endl;
         cout<<"Milisecunda(ms): "<<x*1000<<endl;
@@ -743,7 +743,7 @@ void VITEZA(int x, int y)
         cout<<"Metri pe secunda(m/s): "<<x/11810.9771<<endl;
         cout<<"Tol pe secunda(ips): "<<x/299.9988<<endl;
         cout<<"Mile pe ora(mph): "<<x/5279.9792<<endl;
-        cout<<"Mile pe secunda(mps): "<<x11810.977<<endl;
+        cout<<"Mile pe secunda(mps): "<<x*11810.977<<endl;
         cout<<"Mila marina pe ora(nmi/h): "<<x/6075.5666<<endl;
         cout<<"Yarzi pe ora(Yd/h): "<<x/2.999<<endl;
         cout<<"Yarzi pe min(Yd/min): "<<x/179.9993<<endl;
@@ -834,7 +834,7 @@ void VITEZA(int x, int y)
         cout<<"Tol pe secunda(ips): "<<x*39.37007874015748<<endl;
         cout<<"Mile pe ora(mph): "<<x*2.2369362920544025<<endl;
         cout<<"Mile pe secunda(mps): "<<x<<endl;
-        cout<<"Mila marina pe ora(nmi/h): "<<x*1.944012441679627*<<endl;
+        cout<<"Mila marina pe ora(nmi/h): "<<x*1.944012441679627<<endl;
         cout<<"Yarzi pe ora(Yd/h): "<<x*3937.0078740157483<<endl;
         cout<<"Yarzi pe min(Yd/min): "<<x*65.61678067801033<<endl;
         cout<<"Yarzi pe secunda(Yd/s): "<<x*1.0936130000578717<<endl;
@@ -1114,9 +1114,9 @@ void MASA(int x, int y)
         cout<<"Grame(g): "<<x*1000000<<endl;
         cout<<"Kilograme(kg): "<<x*1000<<endl;
         cout<<"Funte(pound): "<<x*2204.6244201837776<<endl;
-        cout<<"Miligrame(mg): "<<x<*1000000000<endl;
+        cout<<"Miligrame(mg): "<<x*1000000000<<endl;
         cout<<"Unici(oz(AV)): "<<x*35273.99072294044<<endl;
-        cout<<"Unici(oz(Troy): "<<x<32150.722587490156<endl;
+        cout<<"Unici(oz(Troy): "<<x*32150.722587490156<<endl;
         cout<<"Slug(slug): "<<x*68.52176556196105<<endl;
         cout<<"Tone(t): "<<x<<endl;
 
@@ -1417,6 +1417,141 @@ void ENERGIE(int x, int y)
         cout<<"Watt pe ora(W-h): "<<x*0.0002777777777777778<<endl;
         cout<<"Watt pe secunda(W-s): "<<x<<endl;
     }
+}
+void marimiPRESIUNE()
+{
+    cout<<"1.Atmosfera tehnica(at)"<<endl;
+    cout<<"2.Atmosfera standard(atm)"<<endl;
+    cout<<"3.Bar(bar)"<<endl;
+    cout<<"4.Tol coloana de apa(inH2O)"<<endl;
+    cout<<"5.Tol coloana de mercur(inHg)"<<endl;
+    cout<<"6.Kilopond pe centimetru patrat(kp/cm)"<<endl;
+    cout<<"7.Kilopascal(kPa)"<<endl;
+    cout<<"8.Funt-forta pe picior patrat(lbf/ft)"<<endl;
+    cout<<"9.Funt-forta pe Tol patrat"<<endl;
+    cout<<"10.Milibar(mbar)"<<endl;
+    cout<<"11.Metri coloana de apa(mca/mH20)"<<endl;
+    cout<<"12.Milimetri coloana de apa(mmca/mmH20)"<<endl;
+    cout<<"13.Milimetri coloaca de mercur"<<endl;
+    cout<<"14.Megapascal(Mpa)"<<endl;
+    cout<<"15.Newton pe milimetru patrat(N/mm)"<<endl;
+    cout<<"16.Pascal(Pa)"<<endl;
+    cout<<"17.Funte pe tol patrat(PSI)"<<endl;
+    cout<<"18.Torr(torr)"<<endl;
+}
+void PRESIUNE(int x, int y)
+{
+
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cin>>y;
+    if(y<0 && y>18) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Atmosfera tehnica(at): "<<x<<endl;
+        cout<<"Atmosfera standard(atm): "<<x*0.9678384900648549<<endl;
+        cout<<"Bar(bar): "<<x*1.0006785714285715<<endl;
+        cout<<"Tol coloana de apa(inH2O): "<<x*394.0945989390773<<endl;
+        cout<<"Tol coloana de mercur(inHg): "<<x*28.959025199610767<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*1.0006785714285715<<endl;
+        cout<<"Kilopascal(kPa): "<<x*98.0665<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2048.172514619883<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*14.223343307116183<<endl;
+        cout<<"Milibar(mbar): "<<x*1000.6785714285714<<endl;
+        cout<<"Metri coloana de apa(mca/mH20): "<<x*10.006785714285714<<endl;
+        cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10006.785714285714<<endl;
+        cout<<"Milimetri coloaca de mercur(mmHG): "<<x*735.559240069375<<endl;
+        cout<<"Megapascal(MPa): "<<x*0.0980665<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.0980665<<endl;
+        cout<<"Pascal(Pa): "<<x*98066.5<<endl;
+        cout<<"Funte pe tol patrat(PSI): "<<x*14.223343307116183<<endl;
+        cout<<"Torr(torr): "<<x*735.559240069375<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Atmosfera tehnica(at): "<<x*1.033230244782877<<endl;
+        cout<<"Atmosfera standard(atm): "<<x<<endl;
+        cout<<"Bar(bar): "<<x*1.0339313653061224<<endl;
+        cout<<"Tol coloana de apa(inH2O): "<<x*407.19045892943257<<endl;
+        cout<<"Tol coloana de mercur(inHg): "<<x*29.921340695667336<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*1.0339313653061224<<endl;
+        cout<<"Kilopascal(kPa): "<<x*101.32527379999999<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2116.233788638262<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*14.695988486842547<<endl;
+        cout<<"Milibar(mbar): "<<x*1033.9313653061224<<endl;
+        cout<<"Metri coloana de apa(mca/mH20): "<<x*10.339313653061224<<endl;
+        cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10339.313653061223<<endl;
+        cout<<"Milimetri coloaca de mercur(mmHg): "<<x*760.0020536691873<<endl;
+        cout<<"Megapascal(MPa): "<<x*0.10132527379999999<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.10132527379999999<<endl;
+        cout<<"Pascal(Pa): "<<x*101325.2738<<endl;
+        cout<<"Funte pe tol patrat(PSI): "<<x*14.695988486842547<<endl;
+        cout<<"Torr(torr): "<<x*760.0020536691873<<endl;
+    }
+    else if(y==3)
+    {
+        cout<<"Atmosfera tehnica(at): "<<x*0.9993218887183697<<endl;
+        cout<<"Atmosfera standard(atm): "<<x*0.9671821878659459<<endl;
+        cout<<"Bar(bar): "<<x<<endl;
+        cout<<"Tol coloana de apa(inH2O): "<<x*393.82735894550717<<endl;
+        cout<<"Tol coloana de mercur(inHg): "<<x*28.939387757917896<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x<<endl;
+        cout<<"Kilopascal(kPa): "<<x*98<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2046.7836257309941<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*14.213698297557126<<endl;
+        cout<<"Milibar(mbar): "<<x*1000<<endl;
+        cout<<"Metri coloana de apa(mca/mH20): "<<x*10<<endl;
+        cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10000<<endl;
+        cout<<"Milimetri coloaca de mercur(mmHg): "<<x*735.0604490503765<<endl;
+        cout<<"Megapascal(MPa): "<<x*0.098<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.098<<endl;
+        cout<<"Pascal(Pa): "<<x*98000<<endl;
+        cout<<"Funte pe tol patrat(PSI): "<<x*14.213698297557126<<endl;
+        cout<<"Torr(torr): "<<x*735.0604490503765<<endl;
+    }
+    else if(y==4)
+    {
+        cout<<"Atmosfera tehnica(at): "<<x*0.0025374618243742767<<endl;
+        cout<<"Atmosfera standard(atm): "<<x*0.002455853220699612<<endl;
+        cout<<"Bar(bar): "<<x*0.002539183673469388<<endl;
+        cout<<"Tol coloana de apa(inH2O): "<<x<<endl;
+        cout<<"Tol coloana de mercur(inHg): "<<x*0.073482420915105<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.002539183673469388<<endl;
+        cout<<"Kilopascal(kPa): "<<x*0.24884<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*5.197159565580618<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.036091190656776684<<endl;
+        cout<<"Milibar(mbar): "<<x*2.539183673469388<<endl;
+        cout<<"Metri coloana de apa(mca/mH20): "<<x*0.02539183673469388<<endl;
+        cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*25.391836734693875<<endl;
+        cout<<"Milimetri coloaca de mercur(mmHg): "<<x*1.866453491241793<<endl;
+        cout<<"Megapascal(MPa): "<<x<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.00024884<<endl;
+        cout<<"Pascal(Pa): "<<x*248.84<<endl;
+        cout<<"Funte pe tol patrat(PSI): "<<x*0.036091190656776684<<endl;
+        cout<<"Torr(torr): "<<x*1.866453491241793<<endl;
+    }
+    else if(y==5)
+    {
+        cout<<"Atmosfera tehnica(at): "<<x*0.034531549080368935<<endl;
+        cout<<"Atmosfera standard(atm): "<<x*0.0334209623215447<<endl;
+        cout<<"Bar(bar): "<<x*0.03455498120295918<<endl;
+        cout<<"Tol coloana de apa(inH2O): "<<x*13.608696985573058<<endl;
+        cout<<"Tol coloana de mercur(inHg): "<<x<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.03455498120295918<<endl;
+        cout<<"Kilopascal(kPa): "<<x*3.38638815789<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*70.72656971365915<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.49115407749661943<<endl;
+        cout<<"Milibar(mbar): "<<x*34.55498120295918<<endl;
+        cout<<"Metri coloana de apa(mca/mH20): "<<x*0.34554981202959184<<endl;
+        cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*345.5498120295918<<endl;
+        cout<<"Milimetri coloaca de mercur(mmHg): "<<x*25.3999999999745<<endl;
+        cout<<"Megapascal(MPa): "<<x*0.00338638815789<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.00338638815789<<endl;
+        cout<<"Pascal(Pa): "<<x*3386.38815789<<endl;
+        cout<<"Funte pe tol patrat(PSI): "<<x*0.49115407749661943<<endl;
+        cout<<"Torr(torr): "<<x*25.3999999999745<<endl;
+    }
+    else if(y==6)
 }
 int main()
 {
