@@ -22,7 +22,7 @@ void citireNumarUnitateConvertire(int x)
     if(x>11 && x<0) return;
 
 }
-void citireValoarePentruConvertire(int x)
+void citireValoarePentruConvertire(float &x)
 {
     cout<<"Introduceti valoarea POZITIVA pe care doriti sa o convertiti: ";
     cin>>x;
@@ -40,10 +40,10 @@ void marimiLUNGIME()
     cout<<"8.Mila maritima(nmi)"<<endl;
     cout<<"9.Yarzi(Yd)"<<endl;
 }
-void LUNGIME(int x, int y)
+void LUNGIME(float x, int y)
 {
     marimiLUNGIME();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>9) return;
     citireValoarePentruConvertire(x);
@@ -171,10 +171,10 @@ void marimiARIE()
     cout<<"9.Milimetri(mm)"<<endl;
     cout<<"10.Yarzi(Yd)"<<endl;
 }
-void ARIE(int x, int y)
+void ARIE(float x, int y)
 {
     marimiARIE();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>10) return;
     citireValoarePentruConvertire(x);
@@ -182,157 +182,157 @@ void ARIE(int x, int y)
     {
         cout<<"Ari(a):"<<x<<endl;
         cout<<"Acri(ac):"<<x/40.4685611<<endl;
-        cout<<"Centimetri(cm):"<<x*1000000<<endl;
-        cout<<"Picioare(ft):"<<x/1076.426<<endl;
+        cout<<"Centimetri(cm²):"<<x*1000000<<endl;
+        cout<<"Picioare(ft²):"<<x/1076.426<<endl;
         cout<<"Hectari(ha):"<<x/100<<endl;
-        cout<<"Tol(in):"<<x*154990.700557<<endl;
-        cout<<"Kilometri(km):"<<x/10000<<endl;
-        cout<<"Metri(m):"<<x*100<<endl;
-        cout<<"Milimetri(mm):"<<x*100000000<<endl;
-        cout<<"Yarzi(Yd):"<<x*119.598939<<endl;
+        cout<<"Tol(in²):"<<x*154990.700557<<endl;
+        cout<<"Kilometri(km²):"<<x/10000<<endl;
+        cout<<"Metri(m²):"<<x*100<<endl;
+        cout<<"Milimetri(mm²):"<<x*100000000<<endl;
+        cout<<"Yarzi(Yd²):"<<x*119.598939<<endl;
     }
     else if(y==2)
     {
         cout<<"Ari(a):"<<x*40.468561<<endl;
         cout<<"Acri(ac):"<<x<<endl;
-        cout<<"Centimetri(cm):"<<x*40468561.19<<endl;
-        cout<<"Picioare(ft):"<<x*43561.42216<<endl;
+        cout<<"Centimetri(cm²):"<<x*40468561.19<<endl;
+        cout<<"Picioare(ft²):"<<x*43561.42216<<endl;
         cout<<"Hectari(ha):"<<x/2.471053<<endl;
-        cout<<"Tol(in):"<<x*6272250.64941<<endl;
-        cout<<"Kilometri(km):"<<x/247.1053999<<endl;
-        cout<<"Metri(m):"<<x/4046.856119<<endl;
-        cout<<"Milimetri(mm):"<<x*4046856119<<endl;
-        cout<<"Yarzi(Yd):"<<x*4839.9969975<<endl;
+        cout<<"Tol(in²):"<<x*6272250.64941<<endl;
+        cout<<"Kilometri(km²):"<<x/247.1053999<<endl;
+        cout<<"Metri(m²):"<<x/4046.856119<<endl;
+        cout<<"Milimetri(mm²):"<<x*4046856119<<endl;
+        cout<<"Yarzi(Yd²):"<<x*4839.9969975<<endl;
     }
     else if(y==3)
     {
         cout<<"Ari(a):"<<x/1000000<<endl;
         cout<<"Acri(ac):"<<x*2.471053<<endl;
-        cout<<"Centimetri(cm):"<<x<<endl;
-        cout<<"Picioare(ft):"<<x/929<<endl;
-        cout<<"Hectari(ha):"<<x/6.452<<endl;
-        cout<<"Tol(in):"<<x<<endl;
-        cout<<"Kilometri(km):"<<x<<endl;
-        cout<<"Metri(m):"<<x/10000<<endl;
-        cout<<"Milimetri(mm):"<<x*100<<endl;
-        cout<<"Yarzi(Yd):"<<x/8361.27816<<endl;
+        cout<<"Centimetri(cm²):"<<x<<endl;
+        cout<<"Picioare(ft²):"<<x/929<<endl;
+        cout<<"Hectari(ha):"<<x*1e-8<<endl;
+        cout<<"Tol(in²):"<<x*0.15499070055796654<<endl;
+        cout<<"Kilometri(km²):"<<x*1e-10<<endl;
+        cout<<"Metri(m²):"<<x/10000<<endl;
+        cout<<"Milimetri(mm²):"<<x*100<<endl;
+        cout<<"Yarzi(Yd²):"<<x/8361.27816<<endl;
     }
     else if(y==4)
     {
         cout<<"Ari(a):"<<x/1076.426264<<endl;
         cout<<"Acri(ac):"<<x/43561.422163<<endl;
-        cout<<"Centimetri(cm):"<<x*928.999999<<endl;
-        cout<<"Picioare(ft):"<<x<<endl;
+        cout<<"Centimetri(cm²):"<<x*928.999999<<endl;
+        cout<<"Picioare(ft²):"<<x<<endl;
         cout<<"Hectari(ha):"<<x*107642.626481<<endl;
-        cout<<"Tol(in):"<<x*143.9863<<endl;
-        cout<<"Kilometri(km):"<<x*9.28999999<<endl;
-        cout<<"Metri(m):"<<x/10.764262<<endl;
-        cout<<"Milimetri(mm):"<<x*92900<<endl;
-        cout<<"Yarzi(Yd):"<<x/9.000299<<endl;
+        cout<<"Tol(in²):"<<x*143.9863<<endl;
+        cout<<"Kilometri(km²):"<<x*9.28999999<<endl;
+        cout<<"Metri(m²):"<<x/10.764262<<endl;
+        cout<<"Milimetri(mm²):"<<x*92900<<endl;
+        cout<<"Yarzi(Yd²):"<<x/9.000299<<endl;
     }
     else if(y==5)
     {
         cout<<"Ari(a):"<<x*100<<endl;
         cout<<"Acri(ac):"<<x*2.471053<<endl;
-        cout<<"Centimetri(cm):"<<x*100000000<<endl;
-        cout<<"Picioare(ft):"<<x*107642.62648<<endl;
+        cout<<"Centimetri(cm²):"<<x*100000000<<endl;
+        cout<<"Picioare(ft²):"<<x*107642.62648<<endl;
         cout<<"Hectari(ha):"<<x<<endl;
-        cout<<"Tol(in):"<<x*15499070.0557<<endl;
-        cout<<"Kilometri(km):"<<x/100<<endl;
-        cout<<"Metri(m):"<<x*10000<<endl;
-        cout<<"Milimetri(mm):"<<x*10000000000<<endl;
-        cout<<"Yarzi(Yd):"<<x*11959.8939404<<endl;
+        cout<<"Tol(in²):"<<x*15499070.0557<<endl;
+        cout<<"Kilometri(km²):"<<x/100<<endl;
+        cout<<"Metri(m²):"<<x*10000<<endl;
+        cout<<"Milimetri(mm²):"<<x*10000000000<<endl;
+        cout<<"Yarzi(Yd²):"<<x*11959.8939404<<endl;
     }
     else if(y==6)
     {
 
         cout<<"Ari(a):"<<x/154990.7005603<<endl;
         cout<<"Acri(ac):"<<x*1.594324<<endl;
-        cout<<"Centimetri(cm):"<<x*6.4519999<<endl;
-        cout<<"Picioare(ft):"<<x*143.98636<<endl;
-        cout<<"Hectari(ha):"<<x<<endl;
-        cout<<"Tol(in):"<<x<<endl;
-        cout<<"Kilometri(km):"<<x<<endl;
-        cout<<"Metri(m):"<<x/1549.907005<<endl;
-        cout<<"Milimetri(mm):"<<x*645.2<<endl;
-        cout<<"Yarzi(Yd):"<<x/1295.920359<<endl;
+        cout<<"Centimetri(cm²):"<<x*6.4519999<<endl;
+        cout<<"Picioare(ft²):"<<x*143.98636<<endl;
+        cout<<"Hectari(ha):"<<x*6.452e-8<<endl;
+        cout<<"Tol(in²):"<<x<<endl;
+        cout<<"Kilometri(km²):"<<x*6.452e-10<<endl;
+        cout<<"Metri(m²):"<<x/1549.907005<<endl;
+        cout<<"Milimetri(mm²):"<<x*645.2<<endl;
+        cout<<"Yarzi(Yd²):"<<x/1295.920359<<endl;
     }
     else if(y==7)
     {
         cout<<"Ari(a):"<<x*1000<<endl;
         cout<<"Acri(ac):"<<x/247.1053999<<endl;
-        cout<<"Centimetri(cm):"<<x*10000000000<<endl;
-        cout<<"Picioare(ft):"<<x*10764262.648<<endl;
+        cout<<"Centimetri(cm²):"<<x*10000000000<<endl;
+        cout<<"Picioare(ft²):"<<x*10764262.648<<endl;
         cout<<"Hectari(ha):"<<x*100<<endl;
-        cout<<"Tol(in):"<<x*1549907005.5796<<endl;
-        cout<<"Kilometri(km):"<<x<<endl;
-        cout<<"Metri(m):"<<x*1000000<<endl;
-        cout<<"Milimetri(mm):"<<x*1000000000000<<endl;
-        cout<<"Yarzi(Yd):"<<x*1195989.39404<<endl;
+        cout<<"Tol(in²):"<<x*1549907005.5796<<endl;
+        cout<<"Kilometri(km²) :"<<x<<endl;
+        cout<<"Metri(m²):"<<x*1000000<<endl;
+        cout<<"Milimetri(mm²):"<<x*1000000000000<<endl;
+        cout<<"Yarzi(Yd²):"<<x*1195989.39404<<endl;
     }
     else if(y==8)
     {
 
         cout<<"Ari(a):"<<x/100<<endl;
         cout<<"Acri(ac):"<<x/4046.856119<<endl;
-        cout<<"Centimetri(cm):"<<x*10000<<endl;
-        cout<<"Picioare(ft):"<<x*10.7642626<<endl;
+        cout<<"Centimetri(cm²):"<<x*10000<<endl;
+        cout<<"Picioare(ft²):"<<x*10.7642626<<endl;
         cout<<"Hectari(ha):"<<x/10000<<endl;
-        cout<<"Tol(in):"<<x*1549.907005<<endl;
-        cout<<"Kilometri(km):"<<x/1000000<<endl;
-        cout<<"Metri(m):"<<x<<endl;
-        cout<<"Milimetri(mm):"<<x*1000000<<endl;
-        cout<<"Yarzi(Yd):"<<x*1.195989394<<endl;
+        cout<<"Tol(in²):"<<x*1549.907005<<endl;
+        cout<<"Kilometri(km²):"<<x/1000000<<endl;
+        cout<<"Metri(m²):"<<x<<endl;
+        cout<<"Milimetri(mm²):"<<x*1000000<<endl;
+        cout<<"Yarzi(Yd²):"<<x*1.195989394<<endl;
 
     }
     else if(y==9)
     {
         cout<<"Ari(a):"<<x<<endl;
         cout<<"Acri(ac):"<<x*2.471053<<endl;
-        cout<<"Centimetri(cm):"<<x/100.000000000001<<endl;
-        cout<<"Picioare(ft):"<<x/92900.000000074<<endl;
-        cout<<"Hectari(ha):"<<x<<endl;
-        cout<<"Tol(in):"<<x*645.2<<endl;
-        cout<<"Kilometri(km):"<<x<<endl;
-        cout<<"Metri(m):"<<x/1000000<<endl;
-        cout<<"Milimetri(mm):"<<x<<endl;
-        cout<<"Yarzi(Yd):"<<x/836127.816029<<endl;
+        cout<<"Centimetri(cm²):"<<x/100.000000000001<<endl;
+        cout<<"Picioare(ft²):"<<x/92900.000000074<<endl;
+        cout<<"Hectari(ha):"<<x*9.999999999999999e-11<<endl;
+        cout<<"Tol(in²):"<<x*645.2<<endl;
+        cout<<"Kilometri(km²):"<<x*1e-12<<endl;
+        cout<<"Metri(m²):"<<x/1000000<<endl;
+        cout<<"Milimetri(mm²):"<<x<<endl;
+        cout<<"Yarzi(Yd²):"<<x/836127.816029<<endl;
     }
     else if(y==10)
     {
         cout<<"Ari(a):"<<x/119.598939<<endl;
         cout<<"Acri(ac):"<<x/4839.99699<<endl;
-        cout<<"Centimetri(cm):"<<x*8361.27816<<endl;
-        cout<<"Picioare(ft):"<<x*9.0002994<<endl;
+        cout<<"Centimetri(cm²):"<<x*8361.27816<<endl;
+        cout<<"Picioare(ft²):"<<x*9.0002994<<endl;
         cout<<"Hectari(ha):"<<x/11959.89394<<endl;
-        cout<<"Tol(in):"<<x*1295.92035957<<endl;
-        cout<<"Kilometri(km):"<<x<<endl;
-        cout<<"Metri(m):"<<x/1.195989<<endl;
-        cout<<"Milimetri(mm):"<<x*836127.816<<endl;
-        cout<<"Yarzi(Yd):"<<x<<endl;
+        cout<<"Tol(in²):"<<x*1295.92035957<<endl;
+        cout<<"Kilometri(km²):"<<x*8.361278159999999e-7<<endl;
+        cout<<"Metri(m²):"<<x/1.195989<<endl;
+        cout<<"Milimetri(mm²):"<<x*836127.816<<endl;
+        cout<<"Yarzi(Yd²):"<<x<<endl;
 
     }
 }
 void marimiVOLUM()
 {
     cout<<"1.Centilitri(cl)"<<endl;
-    cout<<"2.Centrimetri(cm)"<<endl;
+    cout<<"2.Centrimetri(cm³)"<<endl;
     cout<<"3.Decilitri(dl)"<<endl;
-    cout<<"4.Decimetri(dm)"<<endl;
-    cout<<"5.Picioare(ft)"<<endl;
+    cout<<"4.Decimetri(dm³)"<<endl;
+    cout<<"5.Picioare(ft³)"<<endl;
     cout<<"6.Galon(gal)"<<endl;
-    cout<<"7.Tol(in)"<<endl;
+    cout<<"7.Tol(in³)"<<endl;
     cout<<"8.Litri(l)"<<endl;
     cout<<"9.Mililitri(ml)"<<endl;
     cout<<"10.Metri(m)"<<endl;
-    cout<<"11.Yarzi(Yd)"<<endl;
+    cout<<"11.Yarzi(Yd³)"<<endl;
 
 }
-void VOLUM(int x, int y)
+void VOLUM(float x, int y)
 {
 
     marimiVOLUM();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>11) return;
     citireValoarePentruConvertire(x);
@@ -346,7 +346,7 @@ void VOLUM(int x, int y)
         cout<<"Galon(gal):"<<x/454.60124<<endl;
         cout<<"Tol(in):"<<x/1.63870<<endl;
         cout<<"Litri(l):"<<x/100<<endl;
-        cout<<"Mililitri(ml):"<<x<<endl;
+        cout<<"Mililitri(ml):"<<x*10<<endl;
         cout<<"Metri(m):"<<x/100000<<endl;
         cout<<"Yarzi(Yd):"<<x/76456.10654<<endl;
     }
@@ -507,26 +507,26 @@ void marimiTIMP()
     cout<<"10.Picosecunda(ps)"<<endl;
     cout<<"11.Secunda(s)"<<endl;
 }
-void TIMP(int x, int y)
+void TIMP(float x, int y)
 {
     marimiTIMP();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>11) return;
     citireValoarePentruConvertire(x);
     if(y==1)
     {
         cout<<"Attosecunda(as): "<<x<<endl;
-        cout<<"Centisecunda(cs): "<<x<<endl;
-        cout<<"Decisecunda(ds): "<<x<<endl;
+        cout<<"Centisecunda(cs): "<<x*1.0000000000000001e-16<<endl;
+        cout<<"Decisecunda(ds): "<<x*1e-17<<endl;
         cout<<"Femtosecunda(fs): "<<x/1000<<endl;
         cout<<"Ora(h): "<<x*2.777<<endl;
         cout<<"Megaannum(ma): "<<x*3.17323<<endl;
         cout<<"Minute(min): "<<x*1.666<<endl;
-        cout<<"Milisecunda(ms): "<<x<<endl;
-        cout<<"Nanosecunda(ns): "<<x<<endl;
+        cout<<"Milisecunda(ms): "<<x*1e-15<<endl;
+        cout<<"Nanosecunda(ns): "<<x*1e-9<<endl;
         cout<<"Picosecunda(ps): "<<x/1000000<<endl;
-        cout<<"Secunda(s): "<<x<<endl;
+        cout<<"Secunda(s): "<<x*1e-18<<endl;
     }
     else if(y==2)
     {
@@ -688,10 +688,10 @@ void marimiVITEZA()
     cout<<"15.Yarzi pe secunda(Yd/s)"<<endl;
 
 }
-void VITEZA(int x, int y)
+void VITEZA(float x, int y)
 {
     void marimiVITEZA();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti: ";
     cin>>y;
     if(y<0 && y>15) return;
     citireValoarePentruConvertire(x);
@@ -968,45 +968,45 @@ void VITEZA(int x, int y)
 }
 void marimiTEMPERATURA()
 {
-    cout<<"1.Grade Celsius(C�)"<<endl;
-    cout<<"2.Grade Fahrenheit(F�)"<<endl;
-    cout<<"3.Grade Kelvin(K�)"<<endl;
-    cout<<"4.Grade Rankie(R�)"<<endl;
+    cout<<"1.Grade Celsius(C°)"<<endl;
+    cout<<"2.Grade Fahrenheit(F°)"<<endl;
+    cout<<"3.Grade Kelvin(K°)"<<endl;
+    cout<<"4.Grade Rankie(R°)"<<endl;
 }
-void TEMPERATURA(int x, int y)
+void TEMPERATURA(float x, int y)
 {
     void marimiTEMPERATURA();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>4) return;
     citireValoarePentruConvertire(x);
     if(y==1)
     {
-        cout<<"Grade Celsius(C�): "<<x<<endl;
-        cout<<"Grade Fahrenheit(F�): "<<(x*9)/5+32<<endl;
-        cout<<"Grade Kelvin(K�): "<<x+273.15<<endl;
-        cout<<"Grade Rankie(R�): "<<(x+273.15)*9/5<<endl;
+        cout<<"Grade Celsius(C°): "<<x<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<(x*9)/5+32<<endl;
+        cout<<"Grade Kelvin(K°): "<<x+273.15<<endl;
+        cout<<"Grade Rankie(R°): "<<(x+273.15)*9/5<<endl;
     }
     else if(y==2)
     {
-        cout<<"Grade Celsius(C�): "<<(x-32)*5/9<<endl;
-        cout<<"Grade Fahrenheit(F�): "<<x<<endl;
-        cout<<"Grade Kelvin(K�): "<<(x+459.67)*5/9<<endl;
-        cout<<"Grade Rankie(R�): "<<(x-32)+491.67<<endl;
+        cout<<"Grade Celsius(C°): "<<(x-32)*5/9<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<x<<endl;
+        cout<<"Grade Kelvin(K°): "<<(x+459.67)*5/9<<endl;
+        cout<<"Grade Rankie(R°): "<<(x-32)+491.67<<endl;
     }
     else if(y==3)
     {
-        cout<<"Grade Celsius(C�): "<<x-273.15<<endl;
-        cout<<"Grade Fahrenheit(F�): "<<x*9/5-459.67<<endl;
-        cout<<"Grade Kelvin(K�): "<<x<<endl;
-        cout<<"Grade Rankie(R�): "<<x*9/5<<endl;
+        cout<<"Grade Celsius(C°): "<<x-273.15<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<x*9/5-459.67<<endl;
+        cout<<"Grade Kelvin(K°): "<<x<<endl;
+        cout<<"Grade Rankie(R°): "<<x*9/5<<endl;
     }
     else if(y==4)
     {
-        cout<<"Grade Celsius(C�): "<<(x-491.67)*5/9<<endl;
-        cout<<"Grade Fahrenheit(F�): "<<x-459.67<<endl;
-        cout<<"Grade Kelvin(K�): "<<x*5/9<<endl;
-        cout<<"Grade Rankie(R�): "<<x<<endl;
+        cout<<"Grade Celsius(C°): "<<(x-491.67)*5/9<<endl;
+        cout<<"Grade Fahrenheit(F°): "<<x-459.67<<endl;
+        cout<<"Grade Kelvin(K°): "<<x*5/9<<endl;
+        cout<<"Grade Rankie(R°): "<<x<<endl;
     }
 }
 void marimiMASA()
@@ -1020,10 +1020,10 @@ void marimiMASA()
         cout<<"7.Slug(slug)"<<endl;
         cout<<"8.Tone(t)"<<endl;
 }
-void MASA(int x, int y)
+void MASA(float x, int y)
 {
     marimiMASA();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>8) return;
     citireValoarePentruConvertire(x);
@@ -1140,10 +1140,10 @@ void marimiENERGIE()
     cout<<"14.Watt pe ora(W-h)"<<endl;
     cout<<"15.Watt pe secunda(W-s)"<<endl;
 }
-void ENERGIE(int x, int y)
+void ENERGIE(float x, int y)
 {
     marimiENERGIE();
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>15) return;
     citireValoarePentruConvertire(x);
@@ -1264,14 +1264,14 @@ void ENERGIE(int x, int y)
         cout<<"Toli pe Livre-forta(in-lbf): "<<x*37056.30248162675<<endl;
         cout<<"Jouli(J): "<<x*4186.8<<endl;
         cout<<"Kilocalorie(kcal): "<<x<<endl;
-        cout<<"Kilojouli(kJ): "<<x<<endl;
-        cout<<"Kilowatt pe ora(kW-h): "<<x<<endl;
-        cout<<"Quad BTU(quad BTU): "<<x<<endl;
-        cout<<"Tona de combustibil conventional(tcc): "<<x<<endl;
-        cout<<"Tona Echivalent Petrol(tep): "<<x<<endl;
-        cout<<"Thermie(th): "<<x<<endl;
-        cout<<"Watt pe ora(W-h): "<<x<<endl;
-        cout<<"Watt pe secunda(W-s): "<<x<<endl;
+        cout<<"Kilojouli(kJ): "<<x*4.1868<<endl;
+        cout<<"Kilowatt pe ora(kW-h): "<<x*0.001163<<endl;
+        cout<<"Quad BTU(quad BTU): "<<x*3.968305120087957e-15<<endl;
+        cout<<"Tona de combustibil conventional(tcc): "<<x*1.4285714285714287e-7<<endl;
+        cout<<"Tona Echivalent Petrol(tep): "<<x*1.0000000000000001e-7<<endl;
+        cout<<"Thermie(th): "<<x*0.001<<endl;
+        cout<<"Watt pe ora(W-h): "<<x*1.163<<endl;
+        cout<<"Watt pe secunda(W-s): "<<x*4186.8<<endl;
     }
     else if(y==8)
     {
@@ -1425,24 +1425,24 @@ void marimiPRESIUNE()
     cout<<"3.Bar(bar)"<<endl;
     cout<<"4.Tol coloana de apa(inH2O)"<<endl;
     cout<<"5.Tol coloana de mercur(inHg)"<<endl;
-    cout<<"6.Kilopond pe centimetru patrat(kp/cm)"<<endl;
+    cout<<"6.Kilopond pe centimetru patrat(kp/cm²)"<<endl;
     cout<<"7.Kilopascal(kPa)"<<endl;
-    cout<<"8.Funt-forta pe picior patrat(lbf/ft)"<<endl;
-    cout<<"9.Funt-forta pe Tol patrat"<<endl;
+    cout<<"8.Funt-forta pe picior patrat(lbf/ft²)"<<endl;
+    cout<<"9.Funt-forta pe Tol patrat(lbf/in²)"<<endl;
     cout<<"10.Milibar(mbar)"<<endl;
     cout<<"11.Metri coloana de apa(mca/mH20)"<<endl;
     cout<<"12.Milimetri coloana de apa(mmca/mmH20)"<<endl;
     cout<<"13.Milimetri coloaca de mercur"<<endl;
     cout<<"14.Megapascal(Mpa)"<<endl;
-    cout<<"15.Newton pe milimetru patrat(N/mm)"<<endl;
+    cout<<"15.Newton pe milimetru patrat(N/mm²²)"<<endl;
     cout<<"16.Pascal(Pa)"<<endl;
-    cout<<"17.Funte pe tol patrat(PSI)"<<endl;
+    cout<<"17.Funte pe tol patrat(PSI²)"<<endl;
     cout<<"18.Torr(torr)"<<endl;
 }
-void PRESIUNE(int x, int y)
+void PRESIUNE(float x, int y)
 {
 
-    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti";
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
     cin>>y;
     if(y<0 && y>18) return;
     citireValoarePentruConvertire(x);
@@ -1453,18 +1453,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*1.0006785714285715<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*394.0945989390773<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*28.959025199610767<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*1.0006785714285715<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*1.0006785714285715<<endl;
         cout<<"Kilopascal(kPa): "<<x*98.0665<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2048.172514619883<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*14.223343307116183<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*2048.172514619883<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*14.223343307116183<<endl;
         cout<<"Milibar(mbar): "<<x*1000.6785714285714<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*10.006785714285714<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10006.785714285714<<endl;
         cout<<"Milimetri coloaca de mercur(mmHG): "<<x*735.559240069375<<endl;
         cout<<"Megapascal(MPa): "<<x*0.0980665<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.0980665<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.0980665<<endl;
         cout<<"Pascal(Pa): "<<x*98066.5<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*14.223343307116183<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*14.223343307116183<<endl;
         cout<<"Torr(torr): "<<x*735.559240069375<<endl;
     }
     else if(y==2)
@@ -1474,18 +1474,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*1.0339313653061224<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*407.19045892943257<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*29.921340695667336<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*1.0339313653061224<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*1.0339313653061224<<endl;
         cout<<"Kilopascal(kPa): "<<x*101.32527379999999<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2116.233788638262<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*14.695988486842547<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*2116.233788638262<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*14.695988486842547<<endl;
         cout<<"Milibar(mbar): "<<x*1033.9313653061224<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*10.339313653061224<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10339.313653061223<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*760.0020536691873<<endl;
         cout<<"Megapascal(MPa): "<<x*0.10132527379999999<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.10132527379999999<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.10132527379999999<<endl;
         cout<<"Pascal(Pa): "<<x*101325.2738<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*14.695988486842547<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*14.695988486842547<<endl;
         cout<<"Torr(torr): "<<x*760.0020536691873<<endl;
     }
     else if(y==3)
@@ -1495,18 +1495,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*393.82735894550717<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*28.939387757917896<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x<<endl;
         cout<<"Kilopascal(kPa): "<<x*98<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2046.7836257309941<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*14.213698297557126<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*2046.7836257309941<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*14.213698297557126<<endl;
         cout<<"Milibar(mbar): "<<x*1000<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*10<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10000<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*735.0604490503765<<endl;
         cout<<"Megapascal(MPa): "<<x*0.098<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.098<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.098<<endl;
         cout<<"Pascal(Pa): "<<x*98000<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*14.213698297557126<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*14.213698297557126<<endl;
         cout<<"Torr(torr): "<<x*735.0604490503765<<endl;
     }
     else if(y==4)
@@ -1516,18 +1516,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.002539183673469388<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*0.073482420915105<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.002539183673469388<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.002539183673469388<<endl;
         cout<<"Kilopascal(kPa): "<<x*0.24884<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*5.197159565580618<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.036091190656776684<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*5.197159565580618<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.036091190656776684<<endl;
         cout<<"Milibar(mbar): "<<x*2.539183673469388<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.02539183673469388<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*25.391836734693875<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*1.866453491241793<<endl;
-        cout<<"Megapascal(MPa): "<<x<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.00024884<<endl;
+        cout<<"Megapascal(MPa): "<<x*0.00024884<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.00024884<<endl;
         cout<<"Pascal(Pa): "<<x*248.84<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.036091190656776684<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.036091190656776684<<endl;
         cout<<"Torr(torr): "<<x*1.866453491241793<<endl;
     }
     else if(y==5)
@@ -1537,18 +1537,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.03455498120295918<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*13.608696985573058<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.03455498120295918<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.03455498120295918<<endl;
         cout<<"Kilopascal(kPa): "<<x*3.38638815789<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*70.72656971365915<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.49115407749661943<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*70.72656971365915<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.49115407749661943<<endl;
         cout<<"Milibar(mbar): "<<x*34.55498120295918<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.34554981202959184<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*345.5498120295918<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*25.3999999999745<<endl;
         cout<<"Megapascal(MPa): "<<x*0.00338638815789<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.00338638815789<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.00338638815789<<endl;
         cout<<"Pascal(Pa): "<<x*3386.38815789<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.49115407749661943<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.49115407749661943<<endl;
         cout<<"Torr(torr): "<<x*25.3999999999745<<endl;
     }
     else if(y==6)
@@ -1558,18 +1558,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*393.82735894550717<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*28.939387757917896<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x<<endl;
         cout<<"Kilopascal(kPa): "<<x*98<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2046.7836257309941<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*14.213698297557126<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*2046.7836257309941<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*14.213698297557126<<endl;
         cout<<"Milibar(mbar): "<<x*1000<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*10<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10000<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*735.0604490503765<<endl;
         cout<<"Megapascal(MPa): "<<x*0.098<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.098<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.098<<endl;
         cout<<"Pascal(Pa): "<<x*98000<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*14.213698297557126<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*14.213698297557126<<endl;
         cout<<"Torr(torr): "<<x*735.0604490503765<<endl;
     }
     else if(y==7)
@@ -1579,18 +1579,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.01020408163265306<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*4.018646519852114<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*0.29529987508079486<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.01020408163265306<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.01020408163265306<<endl;
         cout<<"Kilopascal(kPa): "<<x<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*20.885547201336674<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.14503773773017475<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*20.885547201336674<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.14503773773017475<<endl;
         cout<<"Milibar(mbar): "<<x*10.204081632653061<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.10204081632653061<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*102.0408163265306<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*7.5006168270446585<<endl;
         cout<<"Megapascal(MPa): "<<x/1000<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x/1000<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x/1000<<endl;
         cout<<"Pascal(Pa): "<<x*1000<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.14503773773017475<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.14503773773017475<<endl;
         cout<<"Torr(torr): "<<x*7.5006168270446585<<endl;
     }
     else if(y==8)
@@ -1600,18 +1600,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.0004885714285714286<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*0.19241279537051922<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*0.014138958018868459<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.0004885714285714286<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.0004885714285714286<<endl;
         cout<<"Kilopascal(kPa): "<<x*0.047880000000000006<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.006944406882520768<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.006944406882520768<<endl;
         cout<<"Milibar(mbar): "<<x*0.4885714285714286<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.004885714285714286<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*4.885714285714285<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*0.35912953367889827<<endl;
         cout<<"Megapascal(MPa): "<<x*0.00004788<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.00004788<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.00004788<<endl;
         cout<<"Pascal(Pa): "<<x*47.88<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.006944406882520768<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.006944406882520768<<endl;
         cout<<"Torr(torr): "<<x*0.35912953367889827<<endl;
     }
     else if(y==9)
@@ -1621,18 +1621,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.07035466625683673<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*27.7075924014226<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*2.0360209673855003<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.07035466625683673<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.07035466625683673<<endl;
         cout<<"Kilopascal(kPa): "<<x*6.89475729317<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*144.00077888826232<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*144.00077888826232<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x<<endl;
         cout<<"Milibar(mbar): "<<x*70.35466625683674<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.7035466625683673<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*703.5466625683673<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*51.714932571539784<<endl;
         cout<<"Megapascal(MPa): "<<x*0.00689475729317<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.00689475729317<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.00689475729317<<endl;
         cout<<"Pascal(Pa): "<<x*6894.75729317<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x<<endl;
         cout<<"Torr(torr): "<<x*51.714932571539784<<endl;
     }
     else if(y==10)
@@ -1642,18 +1642,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x/1000<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*0.39382735894550713<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*0.028939387757917896<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x/1000<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x/1000<<endl;
         cout<<"Kilopascal(kPa): "<<x*0.098<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2.046783625730994<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.014213698297557125<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*2.046783625730994<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.014213698297557125<<endl;
         cout<<"Milibar(mbar): "<<x<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x/100<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*10<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*0.7350604490503766<<endl;
         cout<<"Megapascal(MPa): "<<x*0.000098<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.000098<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.000098<<endl;
         cout<<"Pascal(Pa): "<<x*98<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.014213698297557125<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.014213698297557125<<endl;
         cout<<"Torr(torr): "<<x*0.7350604490503766<<endl;
     }
     else if(y==11)
@@ -1663,18 +1663,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x/10<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*39.38273589455071<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*2.8939387757917894<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x/10<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x/10<<endl;
         cout<<"Kilopascal(kPa): "<<x*9.8<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*204.6783625730994<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*1.4213698297557125<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*204.6783625730994<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*1.4213698297557125<<endl;
         cout<<"Milibar(mbar): "<<x*100<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*999.9999999999999<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*73.50604490503765<<endl;
         cout<<"Megapascal(MPa): "<<x*0.0098<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.0098<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.0098<<endl;
         cout<<"Pascal(Pa): "<<x*9800<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*1.4213698297557125<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*1.4213698297557125<<endl;
         cout<<"Torr(torr): "<<x*73.50604490503765<<endl;
     }
     else if(y==12)
@@ -1684,18 +1684,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x/10000<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*0.03938273589455072<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*0.0028939387757917897<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x/10000<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x/10000<<endl;
         cout<<"Kilopascal(kPa): "<<x*0.009800000000000001<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*0.20467836257309943<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.0014213698297557127<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*0.20467836257309943<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.0014213698297557127<<endl;
         cout<<"Milibar(mbar): "<<x/10<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x/1000<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*0.07350604490503766<<endl;
         cout<<"Megapascal(MPa): "<<x*0.000009800000000000001<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.000009800000000000001<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.000009800000000000001<<endl;
         cout<<"Pascal(Pa): "<<x*9.8<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.0014213698297557127<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.0014213698297557127<<endl;
         cout<<"Torr(torr): "<<x*0.07350604490503766<<endl;
     }
     else if(y==13)
@@ -1705,18 +1705,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.0013604323308265306<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*0.535775471873493<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*0.039370078740197004<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.0013604323308265306<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.0013604323308265306<<endl;
         cout<<"Kilopascal(kPa): "<<x*0.13332236842099998<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2.7845106186507933<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.01933677470461073<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*2.7845106186507933<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.01933677470461073<<endl;
         cout<<"Milibar(mbar): "<<x*1.3604323308265305<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.013604323308265305<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*13.604323308265304<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x<<endl;
         cout<<"Megapascal(MPa): "<<x*0.000133322368421<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.000133322368421<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.000133322368421<<endl;
         cout<<"Pascal(Pa): "<<x*133.322368421<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.01933677470461073<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.01933677470461073<<endl;
         cout<<"Torr(torr): "<<x<<endl;
     }
     else if(y==14)
@@ -1726,18 +1726,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*10.204081632653061<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*4018.6465198521137<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*295.29987508079483<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*10.204081632653061<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*10.204081632653061<<endl;
         cout<<"Kilopascal(kPa): "<<x*1000<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*20885.547201336674<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*145.03773773017474<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*20885.547201336674<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*145.03773773017474<<endl;
         cout<<"Milibar(mbar): "<<x*10204.081632653062<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*102.04081632653062<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*102040.8163265306<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*7500.616827044659<<endl;
         cout<<"Megapascal(MPa): "<<x<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x<<endl;
         cout<<"Pascal(Pa): "<<x*1000000<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*145.03773773017474<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*145.03773773017474<<endl;
         cout<<"Torr(torr): "<<x*7500.616827044659<<endl;
     }
     else if(y==15)
@@ -1747,18 +1747,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*10.204081632653061<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*4018.6465198521137<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*295.29987508079483<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*10.204081632653061<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*10.204081632653061<<endl;
         cout<<"Kilopascal(kPa): "<<x*1000<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*20885.547201336674<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*145.03773773017474<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*20885.547201336674<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*145.03773773017474<<endl;
         cout<<"Milibar(mbar): "<<x*10204.081632653062<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*102.04081632653062<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*102040.8163265306<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*7500.616827044659<<endl;
         cout<<"Megapascal(MPa): "<<x<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x<<endl;
         cout<<"Pascal(Pa): "<<x*1000000<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*145.03773773017474<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*145.03773773017474<<endl;
         cout<<"Torr(torr): "<<x*7500.616827044659<<endl;
     }
     else if(y==16)
@@ -1768,18 +1768,18 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.000010204081632653061<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*0.0040186465198521135<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*0.00029529987508079483<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.000010204081632653061<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.000010204081632653061<<endl;
         cout<<"Kilopascal(kPa): "<<x/1000<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*0.020885547201336674<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.00014503773773017476<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*0.020885547201336674<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.00014503773773017476<<endl;
         cout<<"Milibar(mbar): "<<x*0.01020408163265306<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.00010204081632653062<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*0.1020408163265306<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*0.007500616827044659<<endl;
         cout<<"Megapascal(MPa): "<<x/1000000<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x/1000000<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x/1000000<<endl;
         cout<<"Pascal(Pa): "<<x<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x*0.00014503773773017476<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x*0.00014503773773017476<<endl;
         cout<<"Torr(torr): "<<x*0.007500616827044659<<endl;
     }
     else if(y==17)
@@ -1789,48 +1789,550 @@ void PRESIUNE(int x, int y)
         cout<<"Bar(bar): "<<x*0.07035466625683673<<endl;
         cout<<"Tol coloana de apa(inH2O): "<<x*27.7075924014226<<endl;
         cout<<"Tol coloana de mercur(inHg): "<<x*2.0360209673855003<<endl;
-        cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.07035466625683673<<endl;
+        cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.07035466625683673<<endl;
         cout<<"Kilopascal(kPa): "<<x*6.89475729317<<endl;
-        cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*144.00077888826232<<endl;
-        cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x<<endl;
+        cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*144.00077888826232<<endl;
+        cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x<<endl;
         cout<<"Milibar(mbar): "<<x*70.35466625683674<<endl;
         cout<<"Metri coloana de apa(mca/mH20): "<<x*0.7035466625683673<<endl;
         cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*703.5466625683673<<endl;
         cout<<"Milimetri coloaca de mercur(mmHg): "<<x*51.714932571539784<<endl;
         cout<<"Megapascal(MPa): "<<x*0.00689475729317<<endl;
-        cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.00689475729317<<endl;
+        cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.00689475729317<<endl;
         cout<<"Pascal(Pa): "<<x*6894.75729317<<endl;
-        cout<<"Funte pe tol patrat(PSI): "<<x<<endl;
+        cout<<"Funte pe tol patrat(PSI²): "<<x<<endl;
         cout<<"Torr(torr): "<<x*51.714932571539784<<endl;
     }
     else if(y==18)
     {
         cout<<"Atmosfera tehnica(at): "<<x*0.0013595098063151024<<endl;
             cout<<"Atmosfera standard(atm): "<<x*0.0013157859181723722<<endl;
-            cout<<"Bar(bar): "<<x0.0013604323308265306<<endl;
+            cout<<"Bar(bar): "<<x*0.0013604323308265306<<endl;
             cout<<"Tol coloana de apa(inH2O): "<<x*0.535775471873493<<endl;
             cout<<"Tol coloana de mercur(inHg): "<<x*0.039370078740197004<<endl;
-            cout<<"Kilopond pe centimetru patrat(kp/cm): "<<x*0.0013604323308265306<<endl;
+            cout<<"Kilopond pe centimetru patrat(kp/cm²): "<<x*0.0013604323308265306<<endl;
             cout<<"Kilopascal(kPa): "<<x*0.13332236842099998<<endl;
-            cout<<"Funt-forta pe picior patrat(lbf/ft): "<<x*2.7845106186507933<<endl;
-            cout<<"Funt-forta pe Tol patrat(lbf/in): "<<x*0.01933677470461073<<endl;
+            cout<<"Funt-forta pe picior patrat(lbf/ft²): "<<x*2.7845106186507933<<endl;
+            cout<<"Funt-forta pe Tol patrat(lbf/in²): "<<x*0.01933677470461073<<endl;
             cout<<"Milibar(mbar): "<<x*1.3604323308265305<<endl;
             cout<<"Metri coloana de apa(mca/mH20): "<<x*0.013604323308265305<<endl;
             cout<<"Milimetri coloana de apa(mmca/mmH20): "<<x*13.604323308265304<<endl;
             cout<<"Milimetri coloaca de mercur(mmHg): "<<x<<endl;
             cout<<"Megapascal(MPa): "<<x*0.000133322368421<<endl;
-            cout<<"Newton pe milimetru patrat(N/mm): "<<x*0.000133322368421<<endl;
+            cout<<"Newton pe milimetru patrat(N/mm²): "<<x*0.000133322368421<<endl;
             cout<<"Pascal(Pa): "<<x*133.322368421<<endl;
-            cout<<"Funte pe tol patrat(PSI): "<<x*0.01933677470461073<<endl;
+            cout<<"Funte pe tol patrat(PSI²): "<<x*0.01933677470461073<<endl;
             cout<<"Torr(torr): "<<x<<endl;
+    }
+}
+void marimiDENSITATE()
+{
+    cout<<"1.Gram pe centimetru cub(g/cm³)"<<endl;
+    cout<<"2.Gram pe litru(g/l)"<<endl;
+    cout<<"3.Gram pe metru cub(g/m³)"<<endl;
+    cout<<"4.Gram pe mililitru(g/ml)"<<endl;
+    cout<<"5.Gram pe milimetru cub(g/mm³)"<<endl;
+    cout<<"6.Kilogram pe centimetru cub(kg/c³m)"<<endl;
+    cout<<"7.Kilogram pe litru(kg/l)"<<endl;
+    cout<<"8.Funt pe picior cub(lb/ft³)"<<endl;
+    cout<<"9.Funt pe țol cub(ft/in³)"<<endl;
+    cout<<"10.Funt pe galon (UK)(ft/gal)"<<endl;
+    cout<<"11.Funt pe galon (US))ft/gal)"<<endl;
+    cout<<"12.Miligram pe centimetru cub(mg/cm³)"<<endl;
+    cout<<"13.Miligram pe litru(mg/l)"<<endl;
+    cout<<"14.Miligram pe metru cub(mg/m³)"<<endl;
+    cout<<"15.Uncie Avoirdupois pe galon (UK)(oz/gal)"<<endl;
+    cout<<"16.Uncie Avoirdupois pe galon (US))oz/gal)"<<endl;
+    cout<<"17.Uncie Avoirdupois pe picior cub(oz/ft)"<<endl;
+    cout<<"18.Uncie Avoirdupois pe țol cub(oz/in³)"<<endl;
+    cout<<"19.Tona pe metru cub(t/m³)"<<endl;
+
+}
+void DENSITATE(float x, int y)
+{
+    marimiDENSITATE();
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
+    cin>>y;
+    if(y<0 && y>19) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1000<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.001<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.001<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*62.43<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.036127300001111494<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*10.022412855272062<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*8.34540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*1000<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*160.35860569078173<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*133.52649999646275<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<998.8473690911163<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.5780366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x/1000<<endl;
+        cout<<"Gram pe litru(g/l): "<<x<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x/1000<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.000001<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.000001<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.001<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*0.06243<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.00003612730000111149<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*0.010022412855272063<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.00834540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*0.16035860569078172<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*0.13352649999646274<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft): "<<x*0.9988473690911163<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.0005780366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x/1000<<endl;
+    }
+    else if(y==3)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.000001<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*0.001<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.000001<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*1e-9<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*1e-9<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.000001<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*0.00006243000000000001<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*3.612730000111149e-8<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*0.000010022412855272062<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.00000834540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*0.001<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*0.00016035860569078172<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*0.0001352649999646274<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*0.0009988473690911164<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*5.780366721308782e-7<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.000001<<endl;
+    }
+    else if(y==4)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1000<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x/1000<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x/1000<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*62.43<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.036127300001111494<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*10.022412855272062<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*8.34540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*1000<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*160.35860569078173<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*133.52649999646275<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*998.8473690911163<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.5780366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x<<endl;
+    }
+    else if(y==5)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*1000<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1000000<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000000000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*1000<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*1000<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*62430<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*36.12730000111149<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*10022.412855272063<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*8345.40445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*1000000<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000000000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*160358.60569078173<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*133526.49999646275<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*998847.3690911162<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*578.0366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*1000<<endl;
+    }
+    else if(y==6)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*1000<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1000000<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000000000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*1000<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*1000<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*62430<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*36.12730000111149<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*10022.412855272063<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*8345.40445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*1000000<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000000000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*160358.60569078173<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*133526.49999646275<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*998847.3690911162<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*578.0366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*1000<<endl;
+    }
+    else if(y==7)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1000<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x/1000<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x/1000<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*62.43<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.036127300001111494<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*10.022412855272062<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*8.34540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*1000<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*160.35860569078173<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*133.52649999646275<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*998.8473690911163<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.5780366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x<<endl;
+    }
+    else if(y==8)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.01601794009290405<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*16.017940092904052<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*16017.940092904051<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.01601794009290405<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.00001601794009290405<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.00001601794009290405<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.01601794009290405<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.0005786849271361763<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*0.16053840870209934<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.13367618858235<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*16.017940092904052<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*16017.940092904051<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*16017940.092904052<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*2.5686145393365645<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*2.1388194777584935<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*15.999477320056323<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.009258956785694028<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.01601794009290405<<endl;
+    }
+    else if(y==9)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*27.67989858<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*27679.89858<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*27679898.580000002<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*27.67989858<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.02767989858<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.02767989858<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*27.67989858<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*1728.0560683494002<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*277.4193713608189<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*230.9999488735487<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*27679.89858<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*27679898.580000002<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*27679898580.000004<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*4438.709941951049<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*3695.9999776444592<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*27647.993873341926<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*15.99999646010342<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*27.67989858<<endl;
+    }
+    else if(y=10)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.09977637266<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*99.77637266<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*99776.37266000001<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.09977637266<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.00009977637266<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.00009977637266<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.09977637266<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*6.229038945163801<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.003604650948110519<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.8326741847205187<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*99.77637266<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*99776.37266000001<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*99776372.66000001<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*16.000000000641435<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*13.322789823632556<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*99.66136732889579<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.05767440240967674<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.09977637266<<endl;
+    }
+    else if(y==11)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.11982642730000001<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*119.8264273<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*119826.42730000001<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.11982642730000001<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.0001198264273<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.0001198264273<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.11982642730000001<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*7.480763856339001<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.004329005287128476<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*1.2009499253728433<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*119.8264273<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*119826.42730000001<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*119826427.30000001<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*19.215198806735824<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*16.000003444449593<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*119.68831165619292<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.0692640692698246<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.11982642730000001<<endl;
+    }
+    else if(y==12)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.001<<endl;
+        cout<<"Gram pe litru(g/l): "<<x<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x/1000<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.000001<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.000001<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x/1000<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*0.06243<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.0000361<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*0.010022412855272063<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.00834540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*0.16035860569078172<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*0.13352649999646274<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*0.9988473690911163<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.0005780366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x/1000<<endl;
+    }
+    else if(y==13)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.000001<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*0.001<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.000001<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*1e-9<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*1e-9<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.000001<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*0.00006243000000000001<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*3.612730000111149e-8<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*0.000010022412855272062<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.00000834540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*0.001<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*0.00016035860569078172<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*0.00013352649999646274<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*0.0009988<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*5.780366721308782e-7<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.000001<<endl;
+    }
+    else if(y==14)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*9.999999999999999e-10<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*0.000001<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*0.001<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*9.999999999999999e-10<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*1e-12<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*1e-12<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*9.999999999999999e-10<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*6.243e-8<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*3.612730000111149e-11<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*1.0022412855272063e-8<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*8.34540445319611e-9<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*0.000001<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*0.001<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*1.6035860569078172e-7<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*1.3352649999646275e-7<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*9.988473690911162e-7<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*5.780366721308781e-10<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*9.999999999999999e-10<<endl;
+    }
+    else if(y==15)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.006236023291<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*6.236023291<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*6236.023291<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.006236023291<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.000006236023291000001<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.000006236023291000001<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.006236023291<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*0.38931493405713<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.0002252906842478756<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<0.06249999999749439<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.052042136542946066<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*6.236023291<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*6236.023291<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*6236023.291000001<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*0.8326743639436531<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*6.228835457806275<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.003604650150460287<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.006236023291<<endl;
+    }
+    else if(y==16)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.0074891500940000005<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*7.489150094<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*7489.150094<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.0074891500940000005<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.000007489150094<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.000007489150094<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.0074891500940000005<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*0.46754764036842006<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.0002705627721992903<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*0.07505935417716758<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.06249998654512167<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*7.489150094<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*7489.150094<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*7489150.0940000005<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*1.2009496668828268<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*7.480517868120386<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.004329003397424413<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.0074891500940000005<<endl;
+    }
+    else if(y==17)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*0.001001153961<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1.0011539<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1001.153961<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*0.001001153961<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.000001001153961<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.000001001153961<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*0.001001153961<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*0.06250204178523<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.000036168989496348075<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*0.010033978328832944<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*0.008355034724464324<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*1.001153961<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1001.153961<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1001153.961<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*0.16054365326776326<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*0.13368058436992517<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.000578703703907087<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*0.00100115<<endl;
+    }
+    else if(y==18)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x*1.7299940440000001<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1729.994044<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1729994.044<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x*1.7299940440000001<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.001729994044<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.001729994044<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x*1.7299940440000001<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*108.00352816692<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.06250001382772408<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*17.3387145461297<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*14.437499998800348<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<x*1729.994044<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1729994.044<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1729994044<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*277.41943274919686<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*231.00004971004657<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*1727.9999993927008<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x*1.7299940440000001<<endl;
+    }
+    else if(y==19)
+    {
+        cout<<"Gram pe centimetru cub(g/cm³): "<<x<<endl;
+        cout<<"Gram pe litru(g/l): "<<x*1000<<endl;
+        cout<<"Gram pe metru cub(g/m³): "<<x*1000000<<endl;
+        cout<<"Gram pe mililitru(g/ml): "<<x<<endl;
+        cout<<"Gram pe milimetru cub(g/mm³): "<<x*0.001<<endl;
+        cout<<"Kilogram pe centimetru cub(kg/cm³): "<<x*0.001<<endl;
+        cout<<"Kilogram pe litru(kg/l): "<<x<<endl;
+        cout<<"Funt pe picior cub(lb/ft³): "<<x*62.43<<endl;
+        cout<<"Funt pe țol cub(lb/in³): "<<x*0.036127300001111494<<endl;
+        cout<<"Funt pe galon (UK)(lb/gal): "<<x*10.022412855272062<<endl;
+        cout<<"Funt pe galon (US)(lb/gal): "<<x*8.34540445319611<<endl;
+        cout<<"Miligram pe centimetru cub(mg/cm³): "<<1000*x<<endl;
+        cout<<"Miligram pe litru(mg/l): "<<x*1000000<<endl;
+        cout<<"Miligram pe metru cub(mg/m³): "<<x*1000000000<<endl;
+        cout<<"Uncie Avoirdupois pe galon (UK)(oz/gal): "<<x*160.35860569078173<<endl;
+        cout<<"Uncie Avoirdupois pe galon (US))oz/gal): "<<x*133.52649999646275<<endl;
+        cout<<"Uncie Avoirdupois pe picior cub(oz/ft³): "<<x*998.8473690911163<<endl;
+        cout<<"Uncie Avoirdupois pe țol cub(oz/in³): "<<x*0.5780366721308782<<endl;
+        cout<<"Tona pe metru cub(t/m³): "<<x<<endl;
+    }
+}
+void marimeCOMBUSTIBIL()
+{
+    cout<<"1.Litru la 100 de kilometri(l/100km)"<<endl;
+    cout<<"2.Mile pe galon(mpg)"<<endl;
+    cout<<"3.Kilometru la litru()"<<endl;
+}
+void COMBUSTIBIL(float x, int y)
+    {cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti :";
+    cin>>y;
+    if(y<0 && y>3) return;
+    citireValoarePentruConvertire(x);
+    if(y==1)
+    {
+        cout<<"Litru la 100 de kilometri(l/100km) :"<<x<<endl;
+        cout<<"Mile pe galon(mpg) :"<<x*235.2145833<<endl;
+        cout<<"Kilometru la litru(km/l) :"<<x*100<<endl;
+    }
+    else if(y==2)
+    {
+        cout<<"Litru la 100 de kilometri(l/100km) :"<<282.48/x<<endl;
+        cout<<"Mile pe galon(mpg) :"<<x<<endl;
+        cout<<"Kilometru la litru(km/l) :"<<x*0.425144<<endl;
+    }
+    else if(y==3)
+    {
+        cout<<"Litru la 100 de kilometri(l/100km) :"<<x*100<<endl;
+        cout<<"Mile pe galon(mpg) :"<<x*2.352145833<<endl;
+        cout<<"Kilometru la litru(km/l) :"<<x<<endl;
     }
 }
 int main()
 {
-    int x, y, z;
+    float x, y;
+    float z;
     meniu();
-    citireNumarUnitateConvertire(x);
-    if(x==1)
-        LUNGIME(x,y);
+    cout<<"Introduceti numarul pentru unitatea de masura pe care doriti sa o convertiti: ";
+    cin>>x;
+    if(x<0 && x>11) return 0;
+    else if(x==1)
+        LUNGIME(z,y);
+    else if(x==2)
+        ARIE(z,y);
+    else if(x==3)
+        VOLUM(z,y);
+    else if(x==4)
+        TIMP(z,y);
+    else if(x==5)
+        VITEZA(z,y);
+    else if(x==6)
+        TEMPERATURA(z,y);
+    else if(x==7)
+        MASA(z,y);
+    else if(x==8)
+        ENERGIE(z,y);
+    else if(x==9)
+        PRESIUNE(z,y);
+    else if(x==10)
+        DENSITATE(z,y);
+    else if(x==11)
+        COMBUSTIBIL(z,y);
     return 0;
 }
